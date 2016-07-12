@@ -1,1548 +1,749 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'D:\\必备软件\\node.exe',
-1 verbose cli   'D:\\必备软件\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'install',
 1 verbose cli   'ccap',
 1 verbose cli   '--save' ]
-2 info using npm@3.8.6
-3 info using node@v6.0.0
-4 silly loadCurrentTree Starting
-5 silly install loadCurrentTree
-6 silly install readLocalPackageData
-7 silly fetchPackageMetaData ccap
-8 silly fetchNamedPackageData ccap
-9 silly mapToRegistry name ccap
-10 silly mapToRegistry using default registry
-11 silly mapToRegistry registry https://registry.npmjs.org/
-12 silly mapToRegistry data Result {
-12 silly mapToRegistry   raw: 'ccap',
-12 silly mapToRegistry   scope: null,
-12 silly mapToRegistry   name: 'ccap',
-12 silly mapToRegistry   rawSpec: '',
-12 silly mapToRegistry   spec: 'latest',
-12 silly mapToRegistry   type: 'tag' }
-13 silly mapToRegistry uri https://registry.npmjs.org/ccap
-14 verbose request uri https://registry.npmjs.org/ccap
-15 verbose request no auth needed
-16 info attempt registry request try #1 at 09:44:57
-17 verbose request id 2045491a927d6d0c
-18 verbose etag "A99VG95UW2I62GQO945722GP3"
-19 http request GET https://registry.npmjs.org/ccap
-20 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
-21 info attempt registry request try #2 at 09:45:23
-22 verbose etag "A99VG95UW2I62GQO945722GP3"
-23 http request GET https://registry.npmjs.org/ccap
-24 http 304 https://registry.npmjs.org/ccap
-25 verbose headers { date: 'Tue, 12 Jul 2016 01:46:03 GMT',
-25 verbose headers   via: '1.1 varnish',
-25 verbose headers   'cache-control': 'max-age=300',
-25 verbose headers   etag: '"A99VG95UW2I62GQO945722GP3"',
-25 verbose headers   age: '37',
-25 verbose headers   connection: 'keep-alive',
-25 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
-25 verbose headers   'x-cache': 'HIT',
-25 verbose headers   'x-cache-hits': '1',
-25 verbose headers   'x-timer': 'S1468287963.865165,VS0,VE0',
-25 verbose headers   vary: 'Accept-Encoding' }
-26 silly get cb [ 304,
-26 silly get   { date: 'Tue, 12 Jul 2016 01:46:03 GMT',
-26 silly get     via: '1.1 varnish',
-26 silly get     'cache-control': 'max-age=300',
-26 silly get     etag: '"A99VG95UW2I62GQO945722GP3"',
-26 silly get     age: '37',
-26 silly get     connection: 'keep-alive',
-26 silly get     'x-served-by': 'cache-lcy1128-LCY',
-26 silly get     'x-cache': 'HIT',
-26 silly get     'x-cache-hits': '1',
-26 silly get     'x-timer': 'S1468287963.865165,VS0,VE0',
-26 silly get     vary: 'Accept-Encoding' } ]
-27 verbose etag https://registry.npmjs.org/ccap from cache
-28 verbose get saving ccap to C:\Users\lenovo\AppData\Roaming\npm-cache\registry.npmjs.org\ccap\.cache.json
-29 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-30 silly install normalizeTree
-31 silly loadCurrentTree Finishing
-32 silly loadIdealTree Starting
-33 silly install loadIdealTree
-34 silly cloneCurrentTree Starting
-35 silly install cloneCurrentTreeToIdealTree
-36 silly cloneCurrentTree Finishing
-37 silly loadShrinkwrap Starting
-38 silly install loadShrinkwrap
-39 silly loadShrinkwrap Finishing
-40 silly loadAllDepsIntoIdealTree Starting
-41 silly install loadAllDepsIntoIdealTree
-42 silly resolveWithNewModule ccap@0.6.10 checking installable status
-43 silly cache add args [ 'ccap', null ]
-44 verbose cache add spec ccap
-45 silly cache add parsed spec Result {
-45 silly cache add   raw: 'ccap',
-45 silly cache add   scope: null,
-45 silly cache add   name: 'ccap',
-45 silly cache add   rawSpec: '',
-45 silly cache add   spec: 'latest',
-45 silly cache add   type: 'tag' }
-46 silly addNamed ccap@latest
-47 verbose addNamed "latest" is being treated as a dist-tag for ccap
-48 info addNameTag [ 'ccap', 'latest' ]
-49 silly mapToRegistry name ccap
-50 silly mapToRegistry using default registry
-51 silly mapToRegistry registry https://registry.npmjs.org/
-52 silly mapToRegistry data Result {
-52 silly mapToRegistry   raw: 'ccap',
-52 silly mapToRegistry   scope: null,
-52 silly mapToRegistry   name: 'ccap',
-52 silly mapToRegistry   rawSpec: '',
-52 silly mapToRegistry   spec: 'latest',
-52 silly mapToRegistry   type: 'tag' }
-53 silly mapToRegistry uri https://registry.npmjs.org/ccap
-54 verbose addNameTag registry:https://registry.npmjs.org/ccap not in flight; fetching
-55 verbose get https://registry.npmjs.org/ccap not expired, no request
-56 silly addNameTag next cb for ccap with tag latest
-57 silly addNamed ccap@0.6.10
-58 verbose addNamed "0.6.10" is a plain semver version for ccap
-59 silly cache afterAdd ccap@0.6.10
-60 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\ccap\0.6.10\package\package.json not in flight; writing
-61 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-62 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\ccap\0.6.10\package\package.json written
-63 silly fetchNamedPackageData async
-64 silly mapToRegistry name async
-65 silly mapToRegistry using default registry
-66 silly mapToRegistry registry https://registry.npmjs.org/
-67 silly mapToRegistry data Result {
-67 silly mapToRegistry   raw: 'async',
-67 silly mapToRegistry   scope: null,
-67 silly mapToRegistry   name: 'async',
-67 silly mapToRegistry   rawSpec: '',
-67 silly mapToRegistry   spec: 'latest',
-67 silly mapToRegistry   type: 'tag' }
-68 silly mapToRegistry uri https://registry.npmjs.org/async
-69 silly fetchNamedPackageData node-schedule
-70 silly mapToRegistry name node-schedule
-71 silly mapToRegistry using default registry
-72 silly mapToRegistry registry https://registry.npmjs.org/
-73 silly mapToRegistry data Result {
-73 silly mapToRegistry   raw: 'node-schedule',
-73 silly mapToRegistry   scope: null,
-73 silly mapToRegistry   name: 'node-schedule',
-73 silly mapToRegistry   rawSpec: '',
-73 silly mapToRegistry   spec: 'latest',
-73 silly mapToRegistry   type: 'tag' }
-74 silly mapToRegistry uri https://registry.npmjs.org/node-schedule
-75 silly fetchNamedPackageData nan
-76 silly mapToRegistry name nan
-77 silly mapToRegistry using default registry
-78 silly mapToRegistry registry https://registry.npmjs.org/
-79 silly mapToRegistry data Result {
-79 silly mapToRegistry   raw: 'nan',
-79 silly mapToRegistry   scope: null,
-79 silly mapToRegistry   name: 'nan',
-79 silly mapToRegistry   rawSpec: '',
-79 silly mapToRegistry   spec: 'latest',
-79 silly mapToRegistry   type: 'tag' }
-80 silly mapToRegistry uri https://registry.npmjs.org/nan
-81 verbose request uri https://registry.npmjs.org/nan
-82 verbose request no auth needed
-83 info attempt registry request try #1 at 09:46:03
-84 verbose etag "2POVJEDCD6LOO0Y53S1HJ4UMJ"
-85 http request GET https://registry.npmjs.org/nan
-86 verbose request uri https://registry.npmjs.org/node-schedule
-87 verbose request no auth needed
-88 info attempt registry request try #1 at 09:46:03
-89 verbose etag "AUQFWB87W3975VYHDB7SO5Q1R"
-90 http request GET https://registry.npmjs.org/node-schedule
-91 verbose request uri https://registry.npmjs.org/async
-92 verbose request no auth needed
-93 info attempt registry request try #1 at 09:46:03
-94 verbose etag "DWWFY0BROA2VLH86WID1DJ0OQ"
-95 http request GET https://registry.npmjs.org/async
-96 http 304 https://registry.npmjs.org/nan
-97 verbose headers { date: 'Tue, 12 Jul 2016 01:46:18 GMT',
-97 verbose headers   via: '1.1 varnish',
-97 verbose headers   'cache-control': 'max-age=300',
-97 verbose headers   etag: '"2POVJEDCD6LOO0Y53S1HJ4UMJ"',
-97 verbose headers   age: '151',
-97 verbose headers   connection: 'keep-alive',
-97 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
-97 verbose headers   'x-cache': 'HIT',
-97 verbose headers   'x-cache-hits': '1',
-97 verbose headers   'x-timer': 'S1468287978.537933,VS0,VE0',
-97 verbose headers   vary: 'Accept-Encoding' }
-98 silly get cb [ 304,
-98 silly get   { date: 'Tue, 12 Jul 2016 01:46:18 GMT',
-98 silly get     via: '1.1 varnish',
-98 silly get     'cache-control': 'max-age=300',
-98 silly get     etag: '"2POVJEDCD6LOO0Y53S1HJ4UMJ"',
-98 silly get     age: '151',
-98 silly get     connection: 'keep-alive',
-98 silly get     'x-served-by': 'cache-lcy1128-LCY',
-98 silly get     'x-cache': 'HIT',
-98 silly get     'x-cache-hits': '1',
-98 silly get     'x-timer': 'S1468287978.537933,VS0,VE0',
-98 silly get     vary: 'Accept-Encoding' } ]
-99 verbose etag https://registry.npmjs.org/nan from cache
-100 verbose get saving nan to C:\Users\lenovo\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
-101 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-102 silly resolveWithNewModule nan@1.7.0 checking installable status
-103 silly cache add args [ 'nan@1.7.0', null ]
-104 verbose cache add spec nan@1.7.0
-105 silly cache add parsed spec Result {
-105 silly cache add   raw: 'nan@1.7.0',
-105 silly cache add   scope: null,
-105 silly cache add   name: 'nan',
-105 silly cache add   rawSpec: '1.7.0',
-105 silly cache add   spec: '1.7.0',
-105 silly cache add   type: 'version' }
-106 silly addNamed nan@1.7.0
-107 verbose addNamed "1.7.0" is a plain semver version for nan
-108 silly mapToRegistry name nan
-109 silly mapToRegistry using default registry
-110 silly mapToRegistry registry https://registry.npmjs.org/
-111 silly mapToRegistry data Result {
-111 silly mapToRegistry   raw: 'nan',
-111 silly mapToRegistry   scope: null,
-111 silly mapToRegistry   name: 'nan',
-111 silly mapToRegistry   rawSpec: '',
-111 silly mapToRegistry   spec: 'latest',
-111 silly mapToRegistry   type: 'tag' }
-112 silly mapToRegistry uri https://registry.npmjs.org/nan
-113 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
-114 verbose get https://registry.npmjs.org/nan not expired, no request
-115 silly cache afterAdd nan@1.7.0
-116 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\nan\1.7.0\package\package.json not in flight; writing
-117 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-118 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\nan\1.7.0\package\package.json written
-119 http 304 https://registry.npmjs.org/node-schedule
-120 verbose headers { date: 'Tue, 12 Jul 2016 01:46:39 GMT',
-120 verbose headers   via: '1.1 varnish',
-120 verbose headers   'cache-control': 'max-age=300',
-120 verbose headers   etag: '"AUQFWB87W3975VYHDB7SO5Q1R"',
-120 verbose headers   age: '62',
-120 verbose headers   connection: 'keep-alive',
-120 verbose headers   'x-served-by': 'cache-lcy1131-LCY',
-120 verbose headers   'x-cache': 'HIT',
-120 verbose headers   'x-cache-hits': '3',
-120 verbose headers   'x-timer': 'S1468287999.917964,VS0,VE0',
-120 verbose headers   vary: 'Accept-Encoding' }
-121 silly get cb [ 304,
-121 silly get   { date: 'Tue, 12 Jul 2016 01:46:39 GMT',
-121 silly get     via: '1.1 varnish',
-121 silly get     'cache-control': 'max-age=300',
-121 silly get     etag: '"AUQFWB87W3975VYHDB7SO5Q1R"',
-121 silly get     age: '62',
-121 silly get     connection: 'keep-alive',
-121 silly get     'x-served-by': 'cache-lcy1131-LCY',
-121 silly get     'x-cache': 'HIT',
-121 silly get     'x-cache-hits': '3',
-121 silly get     'x-timer': 'S1468287999.917964,VS0,VE0',
-121 silly get     vary: 'Accept-Encoding' } ]
-122 verbose etag https://registry.npmjs.org/node-schedule from cache
-123 verbose get saving node-schedule to C:\Users\lenovo\AppData\Roaming\npm-cache\registry.npmjs.org\node-schedule\.cache.json
-124 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-125 silly resolveWithNewModule node-schedule@0.1.13 checking installable status
-126 silly cache add args [ 'node-schedule@0.1.13', null ]
-127 verbose cache add spec node-schedule@0.1.13
-128 silly cache add parsed spec Result {
-128 silly cache add   raw: 'node-schedule@0.1.13',
-128 silly cache add   scope: null,
-128 silly cache add   name: 'node-schedule',
-128 silly cache add   rawSpec: '0.1.13',
-128 silly cache add   spec: '0.1.13',
-128 silly cache add   type: 'version' }
-129 silly addNamed node-schedule@0.1.13
-130 verbose addNamed "0.1.13" is a plain semver version for node-schedule
-131 silly mapToRegistry name node-schedule
-132 silly mapToRegistry using default registry
-133 silly mapToRegistry registry https://registry.npmjs.org/
-134 silly mapToRegistry data Result {
-134 silly mapToRegistry   raw: 'node-schedule',
-134 silly mapToRegistry   scope: null,
-134 silly mapToRegistry   name: 'node-schedule',
-134 silly mapToRegistry   rawSpec: '',
-134 silly mapToRegistry   spec: 'latest',
-134 silly mapToRegistry   type: 'tag' }
-135 silly mapToRegistry uri https://registry.npmjs.org/node-schedule
-136 verbose addNameVersion registry:https://registry.npmjs.org/node-schedule not in flight; fetching
-137 verbose get https://registry.npmjs.org/node-schedule not expired, no request
-138 silly cache afterAdd node-schedule@0.1.13
-139 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\node-schedule\0.1.13\package\package.json not in flight; writing
-140 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-141 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\node-schedule\0.1.13\package\package.json written
-142 http 200 https://registry.npmjs.org/async
-143 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-143 verbose headers   etag: '"1B1OQKAV8OH8D6L1QNK8YVZ7H"',
-143 verbose headers   'content-type': 'application/json',
-143 verbose headers   'content-encoding': 'gzip',
-143 verbose headers   'cache-control': 'max-age=300',
-143 verbose headers   'content-length': '36389',
-143 verbose headers   'accept-ranges': 'bytes',
-143 verbose headers   date: 'Tue, 12 Jul 2016 01:46:39 GMT',
-143 verbose headers   via: '1.1 varnish',
-143 verbose headers   age: '122',
-143 verbose headers   connection: 'keep-alive',
-143 verbose headers   'x-served-by': 'cache-lcy1120-LCY',
-143 verbose headers   'x-cache': 'HIT',
-143 verbose headers   'x-cache-hits': '10',
-143 verbose headers   'x-timer': 'S1468287999.924878,VS0,VE0',
-143 verbose headers   vary: 'Accept-Encoding' }
-144 silly get cb [ 200,
-144 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-144 silly get     etag: '"1B1OQKAV8OH8D6L1QNK8YVZ7H"',
-144 silly get     'content-type': 'application/json',
-144 silly get     'content-encoding': 'gzip',
-144 silly get     'cache-control': 'max-age=300',
-144 silly get     'content-length': '36389',
-144 silly get     'accept-ranges': 'bytes',
-144 silly get     date: 'Tue, 12 Jul 2016 01:46:39 GMT',
-144 silly get     via: '1.1 varnish',
-144 silly get     age: '122',
-144 silly get     connection: 'keep-alive',
-144 silly get     'x-served-by': 'cache-lcy1120-LCY',
-144 silly get     'x-cache': 'HIT',
-144 silly get     'x-cache-hits': '10',
-144 silly get     'x-timer': 'S1468287999.924878,VS0,VE0',
-144 silly get     vary: 'Accept-Encoding' } ]
-145 verbose get saving async to C:\Users\lenovo\AppData\Roaming\npm-cache\registry.npmjs.org\async\.cache.json
-146 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-147 silly resolveWithNewModule async@1.4.2 checking installable status
-148 silly cache add args [ 'async@1.4.2', null ]
-149 verbose cache add spec async@1.4.2
-150 silly cache add parsed spec Result {
-150 silly cache add   raw: 'async@1.4.2',
-150 silly cache add   scope: null,
-150 silly cache add   name: 'async',
-150 silly cache add   rawSpec: '1.4.2',
-150 silly cache add   spec: '1.4.2',
-150 silly cache add   type: 'version' }
-151 silly addNamed async@1.4.2
-152 verbose addNamed "1.4.2" is a plain semver version for async
-153 silly mapToRegistry name async
-154 silly mapToRegistry using default registry
-155 silly mapToRegistry registry https://registry.npmjs.org/
-156 silly mapToRegistry data Result {
-156 silly mapToRegistry   raw: 'async',
-156 silly mapToRegistry   scope: null,
-156 silly mapToRegistry   name: 'async',
-156 silly mapToRegistry   rawSpec: '',
-156 silly mapToRegistry   spec: 'latest',
-156 silly mapToRegistry   type: 'tag' }
-157 silly mapToRegistry uri https://registry.npmjs.org/async
-158 verbose addNameVersion registry:https://registry.npmjs.org/async not in flight; fetching
-159 verbose get https://registry.npmjs.org/async not expired, no request
-160 silly cache afterAdd async@1.4.2
-161 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\async\1.4.2\package\package.json not in flight; writing
-162 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-163 verbose afterAdd C:\Users\lenovo\AppData\Roaming\npm-cache\async\1.4.2\package\package.json written
-164 silly fetchNamedPackageData fsevents
-165 silly mapToRegistry name fsevents
-166 silly mapToRegistry using default registry
-167 silly mapToRegistry registry https://registry.npmjs.org/
-168 silly mapToRegistry data Result {
-168 silly mapToRegistry   raw: 'fsevents',
-168 silly mapToRegistry   scope: null,
-168 silly mapToRegistry   name: 'fsevents',
-168 silly mapToRegistry   rawSpec: '',
-168 silly mapToRegistry   spec: 'latest',
-168 silly mapToRegistry   type: 'tag' }
-169 silly mapToRegistry uri https://registry.npmjs.org/fsevents
-170 verbose request uri https://registry.npmjs.org/fsevents
-171 verbose request no auth needed
-172 info attempt registry request try #1 at 09:46:49
-173 verbose etag "6FL1QQ9DNV6N8NY5C6AA56K6H"
-174 http request GET https://registry.npmjs.org/fsevents
-175 info retry will retry, error on last attempt: Error: read ECONNRESET
-176 info attempt registry request try #2 at 09:47:29
-177 verbose etag "6FL1QQ9DNV6N8NY5C6AA56K6H"
-178 http request GET https://registry.npmjs.org/fsevents
-179 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
-180 info attempt registry request try #3 at 09:48:41
-181 verbose etag "6FL1QQ9DNV6N8NY5C6AA56K6H"
-182 http request GET https://registry.npmjs.org/fsevents
-183 http 200 https://registry.npmjs.org/fsevents
-184 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-184 verbose headers   etag: '"2RJZMB9ZUXOX3G8I8N4F4LLIK"',
-184 verbose headers   'content-type': 'application/json',
-184 verbose headers   'content-encoding': 'gzip',
-184 verbose headers   'cache-control': 'max-age=300',
-184 verbose headers   'content-length': '6880',
-184 verbose headers   'accept-ranges': 'bytes',
-184 verbose headers   date: 'Tue, 12 Jul 2016 01:49:23 GMT',
-184 verbose headers   via: '1.1 varnish',
-184 verbose headers   age: '275',
-184 verbose headers   connection: 'keep-alive',
-184 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
-184 verbose headers   'x-cache': 'HIT',
-184 verbose headers   'x-cache-hits': '8',
-184 verbose headers   'x-timer': 'S1468288163.202156,VS0,VE0',
-184 verbose headers   vary: 'Accept-Encoding' }
-185 silly get cb [ 200,
-185 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-185 silly get     etag: '"2RJZMB9ZUXOX3G8I8N4F4LLIK"',
-185 silly get     'content-type': 'application/json',
-185 silly get     'content-encoding': 'gzip',
-185 silly get     'cache-control': 'max-age=300',
-185 silly get     'content-length': '6880',
-185 silly get     'accept-ranges': 'bytes',
-185 silly get     date: 'Tue, 12 Jul 2016 01:49:23 GMT',
-185 silly get     via: '1.1 varnish',
-185 silly get     age: '275',
-185 silly get     connection: 'keep-alive',
-185 silly get     'x-served-by': 'cache-lcy1133-LCY',
-185 silly get     'x-cache': 'HIT',
-185 silly get     'x-cache-hits': '8',
-185 silly get     'x-timer': 'S1468288163.202156,VS0,VE0',
-185 silly get     vary: 'Accept-Encoding' } ]
-186 verbose get saving fsevents to C:\Users\lenovo\AppData\Roaming\npm-cache\registry.npmjs.org\fsevents\.cache.json
-187 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
-188 silly resolveWithNewModule fsevents@1.0.12 checking installable status
-189 silly loadAllDepsIntoIdealTree Finishing
-190 silly idealTree:prePrune hjl-blog@1.0.0
-190 silly idealTree:prePrune +-- accepts@1.3.3
-190 silly idealTree:prePrune +-- amdefine@1.0.0
-190 silly idealTree:prePrune +-- amp-message@0.1.2
-190 silly idealTree:prePrune +-- amp@0.3.1
-190 silly idealTree:prePrune +-- ansi-regex@2.0.0
-190 silly idealTree:prePrune +-- ansi-styles@2.2.1
-190 silly idealTree:prePrune +-- anymatch@1.3.0
-190 silly idealTree:prePrune +-- append-field@0.1.0
-190 silly idealTree:prePrune +-- argparse@1.0.7
-190 silly idealTree:prePrune +-- arr-diff@2.0.0
-190 silly idealTree:prePrune +-- arr-flatten@1.0.1
-190 silly idealTree:prePrune +-- array-flatten@1.1.1
-190 silly idealTree:prePrune +-- array-unique@0.2.1
-190 silly idealTree:prePrune +-- arrify@1.0.1
-190 silly idealTree:prePrune +-- async-each@1.0.0
-190 silly idealTree:prePrune +-- async@1.5.2
-190 silly idealTree:prePrune +-- balanced-match@0.4.1
-190 silly idealTree:prePrune +-- base64-url@1.2.2
-190 silly idealTree:prePrune +-- base64url@1.0.6
-190 silly idealTree:prePrune +-- binary-extensions@1.5.0
-190 silly idealTree:prePrune +-- bluebird@3.4.1
-190 silly idealTree:prePrune +-- body-parser@1.15.2
-190 silly idealTree:prePrune +-- brace-expansion@1.1.5
-190 silly idealTree:prePrune +-- braces@1.8.5
-190 silly idealTree:prePrune +-- bson@0.4.23
-190 silly idealTree:prePrune +-- buffer-equal-constant-time@1.0.1
-190 silly idealTree:prePrune +-- buffer-shims@1.0.0
-190 silly idealTree:prePrune +-- bunyan@1.8.1
-190 silly idealTree:prePrune +-- busboy@0.2.13
-190 silly idealTree:prePrune +-- bytes@2.4.0
-190 silly idealTree:prePrune +-- camelcase-keys@1.0.0
-190 silly idealTree:prePrune +-- camelcase@1.2.1
-190 silly idealTree:prePrune +-- ccap@0.6.10
-190 silly idealTree:prePrune | +-- async@1.4.2
-190 silly idealTree:prePrune | `-- nan@1.7.0
-190 silly idealTree:prePrune +-- chalk@1.1.1
-190 silly idealTree:prePrune +-- charm@0.1.2
-190 silly idealTree:prePrune +-- chokidar@1.4.3
-190 silly idealTree:prePrune +-- cli-table@0.3.1
-190 silly idealTree:prePrune +-- coffee-script@1.10.0
-190 silly idealTree:prePrune +-- colors@1.0.3
-190 silly idealTree:prePrune +-- commander@2.9.0
-190 silly idealTree:prePrune +-- composable-middleware@0.3.0
-190 silly idealTree:prePrune +-- compressible@2.0.8
-190 silly idealTree:prePrune +-- compression@1.6.2
-190 silly idealTree:prePrune | `-- bytes@2.3.0
-190 silly idealTree:prePrune +-- concat-map@0.0.1
-190 silly idealTree:prePrune +-- concat-stream@1.4.10
-190 silly idealTree:prePrune +-- configurable@0.0.1
-190 silly idealTree:prePrune +-- connect-redis@3.1.0
-190 silly idealTree:prePrune +-- content-disposition@0.5.1
-190 silly idealTree:prePrune +-- content-type@1.0.2
-190 silly idealTree:prePrune +-- cookie-parser@1.4.3
-190 silly idealTree:prePrune +-- cookie-signature@1.0.6
-190 silly idealTree:prePrune +-- cookie@0.3.1
-190 silly idealTree:prePrune +-- core-util-is@1.0.2
-190 silly idealTree:prePrune +-- cors@2.7.1
-190 silly idealTree:prePrune +-- crc@3.4.0
-190 silly idealTree:prePrune +-- cron@1.1.0
-190 silly idealTree:prePrune +-- debug@2.2.0
-190 silly idealTree:prePrune +-- depd@1.1.0
-190 silly idealTree:prePrune +-- destroy@1.0.4
-190 silly idealTree:prePrune +-- dicer@0.2.5
-190 silly idealTree:prePrune +-- double-ended-queue@2.1.0-0
-190 silly idealTree:prePrune +-- dtrace-provider@0.6.0
-190 silly idealTree:prePrune +-- ecdsa-sig-formatter@1.0.7
-190 silly idealTree:prePrune +-- ee-first@1.1.1
-190 silly idealTree:prePrune +-- encodeurl@1.0.1
-190 silly idealTree:prePrune +-- entities@1.1.1
-190 silly idealTree:prePrune +-- errorhandler@1.4.3
-190 silly idealTree:prePrune +-- es6-promise@3.0.2
-190 silly idealTree:prePrune +-- escape-html@1.0.3
-190 silly idealTree:prePrune +-- escape-regexp@0.0.1
-190 silly idealTree:prePrune +-- escape-string-regexp@1.0.5
-190 silly idealTree:prePrune +-- etag@1.7.0
-190 silly idealTree:prePrune +-- eventemitter2@0.4.14
-190 silly idealTree:prePrune +-- expand-brackets@0.1.5
-190 silly idealTree:prePrune +-- expand-range@1.8.2
-190 silly idealTree:prePrune +-- express-jwt@3.4.0
-190 silly idealTree:prePrune | `-- jsonwebtoken@5.7.0
-190 silly idealTree:prePrune +-- express-session@1.14.0
-190 silly idealTree:prePrune +-- express-unless@0.3.0
-190 silly idealTree:prePrune +-- express@4.14.0
-190 silly idealTree:prePrune +-- extglob@0.3.2
-190 silly idealTree:prePrune +-- filename-regex@2.0.0
-190 silly idealTree:prePrune +-- fill-range@2.2.3
-190 silly idealTree:prePrune +-- finalhandler@0.5.0
-190 silly idealTree:prePrune +-- for-in@0.1.5
-190 silly idealTree:prePrune +-- for-own@0.1.4
-190 silly idealTree:prePrune +-- forwarded@0.1.0
-190 silly idealTree:prePrune +-- fresh@0.3.0
-190 silly idealTree:prePrune +-- get-stdin@4.0.1
-190 silly idealTree:prePrune +-- glob-base@0.3.0
-190 silly idealTree:prePrune +-- glob-parent@2.0.0
-190 silly idealTree:prePrune +-- glob@6.0.4
-190 silly idealTree:prePrune +-- graceful-fs@4.1.4
-190 silly idealTree:prePrune +-- graceful-readlink@1.0.1
-190 silly idealTree:prePrune +-- has-ansi@2.0.0
-190 silly idealTree:prePrune +-- hoek@2.16.3
-190 silly idealTree:prePrune +-- hooks-fixed@1.1.0
-190 silly idealTree:prePrune +-- http-errors@1.5.0
-190 silly idealTree:prePrune +-- iconv-lite@0.4.13
-190 silly idealTree:prePrune +-- ikt@0.0.0
-190 silly idealTree:prePrune +-- indent-string@1.2.2
-190 silly idealTree:prePrune | `-- minimist@1.2.0
-190 silly idealTree:prePrune +-- inflight@1.0.5
-190 silly idealTree:prePrune +-- inherits@2.0.1
-190 silly idealTree:prePrune +-- ipaddr.js@1.1.1
-190 silly idealTree:prePrune +-- is-binary-path@1.0.1
-190 silly idealTree:prePrune +-- is-buffer@1.1.3
-190 silly idealTree:prePrune +-- is-dotfile@1.0.2
-190 silly idealTree:prePrune +-- is-equal-shallow@0.1.3
-190 silly idealTree:prePrune +-- is-extendable@0.1.1
-190 silly idealTree:prePrune +-- is-extglob@1.0.0
-190 silly idealTree:prePrune +-- is-finite@1.0.1
-190 silly idealTree:prePrune +-- is-glob@2.0.1
-190 silly idealTree:prePrune +-- is-number@2.1.0
-190 silly idealTree:prePrune +-- is-posix-bracket@0.1.1
-190 silly idealTree:prePrune +-- is-primitive@2.0.0
-190 silly idealTree:prePrune +-- isarray@0.0.1
-190 silly idealTree:prePrune +-- isemail@1.2.0
-190 silly idealTree:prePrune +-- isobject@2.1.0
-190 silly idealTree:prePrune | `-- isarray@1.0.0
-190 silly idealTree:prePrune +-- joi@6.10.1
-190 silly idealTree:prePrune +-- json-stringify-safe@5.0.1
-190 silly idealTree:prePrune +-- jsonwebtoken@7.0.1
-190 silly idealTree:prePrune +-- jwa@1.1.3
-190 silly idealTree:prePrune +-- jws@3.1.3
-190 silly idealTree:prePrune +-- kareem@1.1.3
-190 silly idealTree:prePrune +-- keypress@0.1.0
-190 silly idealTree:prePrune +-- kind-of@3.0.3
-190 silly idealTree:prePrune +-- lazy@1.0.11
-190 silly idealTree:prePrune +-- linkify-it@2.0.0
-190 silly idealTree:prePrune +-- lodash._baseset@4.3.0
-190 silly idealTree:prePrune +-- lodash._basetostring@4.12.0
-190 silly idealTree:prePrune +-- lodash._stringtopath@4.8.0
-190 silly idealTree:prePrune +-- lodash.set@4.2.0
-190 silly idealTree:prePrune +-- lodash@4.13.1
-190 silly idealTree:prePrune +-- map-obj@1.0.1
-190 silly idealTree:prePrune +-- markdown-it@7.0.0
-190 silly idealTree:prePrune +-- mdurl@1.0.1
-190 silly idealTree:prePrune +-- media-typer@0.3.0
-190 silly idealTree:prePrune +-- meow@2.0.0
-190 silly idealTree:prePrune | `-- minimist@1.2.0
-190 silly idealTree:prePrune +-- merge-descriptors@1.0.1
-190 silly idealTree:prePrune +-- methods@1.1.2
-190 silly idealTree:prePrune +-- micromatch@2.3.10
-190 silly idealTree:prePrune +-- mime-db@1.23.0
-190 silly idealTree:prePrune +-- mime-types@2.1.11
-190 silly idealTree:prePrune +-- mime@1.3.4
-190 silly idealTree:prePrune +-- minimatch@3.0.2
-190 silly idealTree:prePrune +-- minimist@0.0.8
-190 silly idealTree:prePrune +-- mkdirp@0.5.1
-190 silly idealTree:prePrune +-- moment-timezone@0.3.1
-190 silly idealTree:prePrune +-- moment@2.14.1
-190 silly idealTree:prePrune +-- mongodb-core@1.3.18
-190 silly idealTree:prePrune +-- mongodb@2.1.18
-190 silly idealTree:prePrune | `-- readable-stream@1.0.31
-190 silly idealTree:prePrune +-- mongoose@4.5.3
-190 silly idealTree:prePrune +-- mpath@0.2.1
-190 silly idealTree:prePrune +-- mpromise@0.5.5
-190 silly idealTree:prePrune +-- mquery@1.11.0
-190 silly idealTree:prePrune | +-- bluebird@2.10.2
-190 silly idealTree:prePrune | `-- sliced@0.0.5
-190 silly idealTree:prePrune +-- ms@0.7.1
-190 silly idealTree:prePrune +-- multer@1.1.0
-190 silly idealTree:prePrune | +-- concat-stream@1.5.1
-190 silly idealTree:prePrune | +-- isarray@1.0.0
-190 silly idealTree:prePrune | +-- object-assign@3.0.0
-190 silly idealTree:prePrune | `-- readable-stream@2.0.6
-190 silly idealTree:prePrune +-- muri@1.1.0
-190 silly idealTree:prePrune +-- mv@2.1.1
-190 silly idealTree:prePrune +-- nan@2.4.0
-190 silly idealTree:prePrune +-- ncp@2.0.0
-190 silly idealTree:prePrune +-- negotiator@0.6.1
-190 silly idealTree:prePrune +-- node-schedule@0.1.13
-190 silly idealTree:prePrune +-- normalize-path@2.0.1
-190 silly idealTree:prePrune +-- nssocket@0.6.0
-190 silly idealTree:prePrune +-- number-is-nan@1.0.0
-190 silly idealTree:prePrune +-- oauth@0.9.14
-190 silly idealTree:prePrune +-- object-assign@1.0.0
-190 silly idealTree:prePrune +-- object.omit@2.0.0
-190 silly idealTree:prePrune +-- on-finished@2.3.0
-190 silly idealTree:prePrune +-- on-headers@1.0.1
-190 silly idealTree:prePrune +-- once@1.3.3
-190 silly idealTree:prePrune +-- parse-glob@3.0.4
-190 silly idealTree:prePrune +-- parseurl@1.3.1
-190 silly idealTree:prePrune +-- passport-github@1.1.0
-190 silly idealTree:prePrune +-- passport-local@1.0.0
-190 silly idealTree:prePrune +-- passport-oauth@0.1.15
-190 silly idealTree:prePrune | `-- passport@0.1.18
-190 silly idealTree:prePrune +-- passport-oauth2@1.3.0
-190 silly idealTree:prePrune +-- passport-qq@0.0.3
-190 silly idealTree:prePrune +-- passport-strategy@1.0.0
-190 silly idealTree:prePrune +-- passport@0.3.2
-190 silly idealTree:prePrune +-- path-is-absolute@1.0.0
-190 silly idealTree:prePrune +-- path-to-regexp@0.1.7
-190 silly idealTree:prePrune +-- pause@0.0.1
-190 silly idealTree:prePrune +-- pidusage@1.0.4
-190 silly idealTree:prePrune +-- pkginfo@0.2.3
-190 silly idealTree:prePrune +-- pm2-axon-rpc@0.3.6
-190 silly idealTree:prePrune | `-- commander@1.0.5
-190 silly idealTree:prePrune +-- pm2-axon@2.0.11
-190 silly idealTree:prePrune +-- pm2-deploy@0.2.1
-190 silly idealTree:prePrune | `-- async@1.4.2
-190 silly idealTree:prePrune +-- pm2-multimeter@0.1.2
-190 silly idealTree:prePrune +-- pm2@1.1.3
-190 silly idealTree:prePrune | `-- semver@5.1.1
-190 silly idealTree:prePrune +-- pmx@0.6.2
-190 silly idealTree:prePrune +-- preserve@0.2.0
-190 silly idealTree:prePrune +-- process-nextick-args@1.0.7
-190 silly idealTree:prePrune +-- proxy-addr@1.1.2
-190 silly idealTree:prePrune +-- qs@6.2.0
-190 silly idealTree:prePrune +-- random-bytes@1.0.0
-190 silly idealTree:prePrune +-- randomatic@1.1.5
-190 silly idealTree:prePrune +-- range-parser@1.2.0
-190 silly idealTree:prePrune +-- raw-body@2.1.7
-190 silly idealTree:prePrune +-- readable-stream@1.1.14
-190 silly idealTree:prePrune +-- readdirp@2.1.0
-190 silly idealTree:prePrune | +-- isarray@1.0.0
-190 silly idealTree:prePrune | `-- readable-stream@2.1.4
-190 silly idealTree:prePrune +-- redis-commands@1.2.0
-190 silly idealTree:prePrune +-- redis-parser@2.0.3
-190 silly idealTree:prePrune +-- redis@2.6.2
-190 silly idealTree:prePrune +-- regex-cache@0.4.3
-190 silly idealTree:prePrune +-- regexp-clone@0.0.1
-190 silly idealTree:prePrune +-- repeat-element@1.1.2
-190 silly idealTree:prePrune +-- repeat-string@1.5.4
-190 silly idealTree:prePrune +-- repeating@1.1.3
-190 silly idealTree:prePrune +-- require_optional@1.0.0
-190 silly idealTree:prePrune +-- resolve-from@2.0.0
-190 silly idealTree:prePrune +-- rimraf@2.4.5
-190 silly idealTree:prePrune +-- safe-json-stringify@1.0.3
-190 silly idealTree:prePrune +-- semver@5.2.0
-190 silly idealTree:prePrune +-- send@0.14.1
-190 silly idealTree:prePrune +-- serve-static@1.11.1
-190 silly idealTree:prePrune +-- set-immediate-shim@1.0.1
-190 silly idealTree:prePrune +-- setprototypeof@1.0.1
-190 silly idealTree:prePrune +-- shelljs@0.6.0
-190 silly idealTree:prePrune +-- sliced@1.0.1
-190 silly idealTree:prePrune +-- source-map-support@0.4.0
-190 silly idealTree:prePrune +-- source-map@0.1.32
-190 silly idealTree:prePrune +-- sprintf-js@1.0.3
-190 silly idealTree:prePrune +-- statuses@1.3.0
-190 silly idealTree:prePrune +-- streamsearch@0.1.2
-190 silly idealTree:prePrune +-- string_decoder@0.10.31
-190 silly idealTree:prePrune +-- strip-ansi@3.0.1
-190 silly idealTree:prePrune +-- supports-color@2.0.0
-190 silly idealTree:prePrune +-- topo@1.1.0
-190 silly idealTree:prePrune +-- tv4@1.0.18
-190 silly idealTree:prePrune +-- type-is@1.6.13
-190 silly idealTree:prePrune +-- typedarray@0.0.6
-190 silly idealTree:prePrune +-- uc.micro@1.0.2
-190 silly idealTree:prePrune +-- uid-safe@2.1.1
-190 silly idealTree:prePrune +-- uid2@0.0.3
-190 silly idealTree:prePrune +-- underscore.string@2.4.0
-190 silly idealTree:prePrune +-- underscore@1.7.0
-190 silly idealTree:prePrune +-- unpipe@1.0.0
-190 silly idealTree:prePrune +-- util-deprecate@1.0.2
-190 silly idealTree:prePrune +-- utils-merge@1.0.0
-190 silly idealTree:prePrune +-- vary@1.1.0
-190 silly idealTree:prePrune +-- vizion@0.2.12
-190 silly idealTree:prePrune | `-- async@0.9.0
-190 silly idealTree:prePrune +-- wrappy@1.0.2
-190 silly idealTree:prePrune +-- xtend@4.0.1
-190 silly idealTree:prePrune `-- yamljs@0.2.7
-190 silly idealTree:prePrune   +-- argparse@0.1.16
-190 silly idealTree:prePrune   +-- glob@4.5.3
-190 silly idealTree:prePrune   `-- minimatch@2.0.10
-191 silly loadIdealTree Finishing
-192 silly currentTree hjl-blog@1.0.0
-192 silly currentTree +-- accepts@1.3.3
-192 silly currentTree +-- amdefine@1.0.0
-192 silly currentTree +-- amp-message@0.1.2
-192 silly currentTree +-- amp@0.3.1
-192 silly currentTree +-- ansi-regex@2.0.0
-192 silly currentTree +-- ansi-styles@2.2.1
-192 silly currentTree +-- anymatch@1.3.0
-192 silly currentTree +-- append-field@0.1.0
-192 silly currentTree +-- argparse@1.0.7
-192 silly currentTree +-- arr-diff@2.0.0
-192 silly currentTree +-- arr-flatten@1.0.1
-192 silly currentTree +-- array-flatten@1.1.1
-192 silly currentTree +-- array-unique@0.2.1
-192 silly currentTree +-- arrify@1.0.1
-192 silly currentTree +-- async-each@1.0.0
-192 silly currentTree +-- async@1.5.2
-192 silly currentTree +-- balanced-match@0.4.1
-192 silly currentTree +-- base64-url@1.2.2
-192 silly currentTree +-- base64url@1.0.6
-192 silly currentTree +-- binary-extensions@1.5.0
-192 silly currentTree +-- bluebird@3.4.1
-192 silly currentTree +-- body-parser@1.15.2
-192 silly currentTree +-- brace-expansion@1.1.5
-192 silly currentTree +-- braces@1.8.5
-192 silly currentTree +-- bson@0.4.23
-192 silly currentTree +-- buffer-equal-constant-time@1.0.1
-192 silly currentTree +-- buffer-shims@1.0.0
-192 silly currentTree +-- bunyan@1.8.1
-192 silly currentTree +-- busboy@0.2.13
-192 silly currentTree +-- bytes@2.4.0
-192 silly currentTree +-- camelcase-keys@1.0.0
-192 silly currentTree +-- camelcase@1.2.1
-192 silly currentTree +-- chalk@1.1.1
-192 silly currentTree +-- charm@0.1.2
-192 silly currentTree +-- chokidar@1.4.3
-192 silly currentTree +-- cli-table@0.3.1
-192 silly currentTree +-- coffee-script@1.10.0
-192 silly currentTree +-- colors@1.0.3
-192 silly currentTree +-- commander@2.9.0
-192 silly currentTree +-- composable-middleware@0.3.0
-192 silly currentTree +-- compressible@2.0.8
-192 silly currentTree +-- compression@1.6.2
-192 silly currentTree | `-- bytes@2.3.0
-192 silly currentTree +-- concat-map@0.0.1
-192 silly currentTree +-- concat-stream@1.4.10
-192 silly currentTree +-- configurable@0.0.1
-192 silly currentTree +-- connect-redis@3.1.0
-192 silly currentTree +-- content-disposition@0.5.1
-192 silly currentTree +-- content-type@1.0.2
-192 silly currentTree +-- cookie-parser@1.4.3
-192 silly currentTree +-- cookie-signature@1.0.6
-192 silly currentTree +-- cookie@0.3.1
-192 silly currentTree +-- core-util-is@1.0.2
-192 silly currentTree +-- cors@2.7.1
-192 silly currentTree +-- crc@3.4.0
-192 silly currentTree +-- cron@1.1.0
-192 silly currentTree +-- debug@2.2.0
-192 silly currentTree +-- depd@1.1.0
-192 silly currentTree +-- destroy@1.0.4
-192 silly currentTree +-- dicer@0.2.5
-192 silly currentTree +-- double-ended-queue@2.1.0-0
-192 silly currentTree +-- dtrace-provider@0.6.0
-192 silly currentTree +-- ecdsa-sig-formatter@1.0.7
-192 silly currentTree +-- ee-first@1.1.1
-192 silly currentTree +-- encodeurl@1.0.1
-192 silly currentTree +-- entities@1.1.1
-192 silly currentTree +-- errorhandler@1.4.3
-192 silly currentTree +-- es6-promise@3.0.2
-192 silly currentTree +-- escape-html@1.0.3
-192 silly currentTree +-- escape-regexp@0.0.1
-192 silly currentTree +-- escape-string-regexp@1.0.5
-192 silly currentTree +-- etag@1.7.0
-192 silly currentTree +-- eventemitter2@0.4.14
-192 silly currentTree +-- expand-brackets@0.1.5
-192 silly currentTree +-- expand-range@1.8.2
-192 silly currentTree +-- express-jwt@3.4.0
-192 silly currentTree | `-- jsonwebtoken@5.7.0
-192 silly currentTree +-- express-session@1.14.0
-192 silly currentTree +-- express-unless@0.3.0
-192 silly currentTree +-- express@4.14.0
-192 silly currentTree +-- extglob@0.3.2
-192 silly currentTree +-- filename-regex@2.0.0
-192 silly currentTree +-- fill-range@2.2.3
-192 silly currentTree +-- finalhandler@0.5.0
-192 silly currentTree +-- for-in@0.1.5
-192 silly currentTree +-- for-own@0.1.4
-192 silly currentTree +-- forwarded@0.1.0
-192 silly currentTree +-- fresh@0.3.0
-192 silly currentTree +-- get-stdin@4.0.1
-192 silly currentTree +-- glob-base@0.3.0
-192 silly currentTree +-- glob-parent@2.0.0
-192 silly currentTree +-- glob@6.0.4
-192 silly currentTree +-- graceful-fs@4.1.4
-192 silly currentTree +-- graceful-readlink@1.0.1
-192 silly currentTree +-- has-ansi@2.0.0
-192 silly currentTree +-- hoek@2.16.3
-192 silly currentTree +-- hooks-fixed@1.1.0
-192 silly currentTree +-- http-errors@1.5.0
-192 silly currentTree +-- iconv-lite@0.4.13
-192 silly currentTree +-- ikt@0.0.0
-192 silly currentTree +-- indent-string@1.2.2
-192 silly currentTree | `-- minimist@1.2.0
-192 silly currentTree +-- inflight@1.0.5
-192 silly currentTree +-- inherits@2.0.1
-192 silly currentTree +-- ipaddr.js@1.1.1
-192 silly currentTree +-- is-binary-path@1.0.1
-192 silly currentTree +-- is-buffer@1.1.3
-192 silly currentTree +-- is-dotfile@1.0.2
-192 silly currentTree +-- is-equal-shallow@0.1.3
-192 silly currentTree +-- is-extendable@0.1.1
-192 silly currentTree +-- is-extglob@1.0.0
-192 silly currentTree +-- is-finite@1.0.1
-192 silly currentTree +-- is-glob@2.0.1
-192 silly currentTree +-- is-number@2.1.0
-192 silly currentTree +-- is-posix-bracket@0.1.1
-192 silly currentTree +-- is-primitive@2.0.0
-192 silly currentTree +-- isarray@0.0.1
-192 silly currentTree +-- isemail@1.2.0
-192 silly currentTree +-- isobject@2.1.0
-192 silly currentTree | `-- isarray@1.0.0
-192 silly currentTree +-- joi@6.10.1
-192 silly currentTree +-- json-stringify-safe@5.0.1
-192 silly currentTree +-- jsonwebtoken@7.0.1
-192 silly currentTree +-- jwa@1.1.3
-192 silly currentTree +-- jws@3.1.3
-192 silly currentTree +-- kareem@1.1.3
-192 silly currentTree +-- keypress@0.1.0
-192 silly currentTree +-- kind-of@3.0.3
-192 silly currentTree +-- lazy@1.0.11
-192 silly currentTree +-- linkify-it@2.0.0
-192 silly currentTree +-- lodash._baseset@4.3.0
-192 silly currentTree +-- lodash._basetostring@4.12.0
-192 silly currentTree +-- lodash._stringtopath@4.8.0
-192 silly currentTree +-- lodash.set@4.2.0
-192 silly currentTree +-- lodash@4.13.1
-192 silly currentTree +-- map-obj@1.0.1
-192 silly currentTree +-- markdown-it@7.0.0
-192 silly currentTree +-- mdurl@1.0.1
-192 silly currentTree +-- media-typer@0.3.0
-192 silly currentTree +-- meow@2.0.0
-192 silly currentTree | `-- minimist@1.2.0
-192 silly currentTree +-- merge-descriptors@1.0.1
-192 silly currentTree +-- methods@1.1.2
-192 silly currentTree +-- micromatch@2.3.10
-192 silly currentTree +-- mime-db@1.23.0
-192 silly currentTree +-- mime-types@2.1.11
-192 silly currentTree +-- mime@1.3.4
-192 silly currentTree +-- minimatch@3.0.2
-192 silly currentTree +-- minimist@0.0.8
-192 silly currentTree +-- mkdirp@0.5.1
-192 silly currentTree +-- moment-timezone@0.3.1
-192 silly currentTree +-- moment@2.14.1
-192 silly currentTree +-- mongodb-core@1.3.18
-192 silly currentTree +-- mongodb@2.1.18
-192 silly currentTree | `-- readable-stream@1.0.31
-192 silly currentTree +-- mongoose@4.5.3
-192 silly currentTree +-- mpath@0.2.1
-192 silly currentTree +-- mpromise@0.5.5
-192 silly currentTree +-- mquery@1.11.0
-192 silly currentTree | +-- bluebird@2.10.2
-192 silly currentTree | `-- sliced@0.0.5
-192 silly currentTree +-- ms@0.7.1
-192 silly currentTree +-- multer@1.1.0
-192 silly currentTree | +-- concat-stream@1.5.1
-192 silly currentTree | +-- isarray@1.0.0
-192 silly currentTree | +-- object-assign@3.0.0
-192 silly currentTree | `-- readable-stream@2.0.6
-192 silly currentTree +-- muri@1.1.0
-192 silly currentTree +-- mv@2.1.1
-192 silly currentTree +-- nan@2.4.0
-192 silly currentTree +-- ncp@2.0.0
-192 silly currentTree +-- negotiator@0.6.1
-192 silly currentTree +-- normalize-path@2.0.1
-192 silly currentTree +-- nssocket@0.6.0
-192 silly currentTree +-- number-is-nan@1.0.0
-192 silly currentTree +-- oauth@0.9.14
-192 silly currentTree +-- object-assign@1.0.0
-192 silly currentTree +-- object.omit@2.0.0
-192 silly currentTree +-- on-finished@2.3.0
-192 silly currentTree +-- on-headers@1.0.1
-192 silly currentTree +-- once@1.3.3
-192 silly currentTree +-- parse-glob@3.0.4
-192 silly currentTree +-- parseurl@1.3.1
-192 silly currentTree +-- passport-github@1.1.0
-192 silly currentTree +-- passport-local@1.0.0
-192 silly currentTree +-- passport-oauth@0.1.15
-192 silly currentTree | `-- passport@0.1.18
-192 silly currentTree +-- passport-oauth2@1.3.0
-192 silly currentTree +-- passport-qq@0.0.3
-192 silly currentTree +-- passport-strategy@1.0.0
-192 silly currentTree +-- passport@0.3.2
-192 silly currentTree +-- path-is-absolute@1.0.0
-192 silly currentTree +-- path-to-regexp@0.1.7
-192 silly currentTree +-- pause@0.0.1
-192 silly currentTree +-- pidusage@1.0.4
-192 silly currentTree +-- pkginfo@0.2.3
-192 silly currentTree +-- pm2-axon-rpc@0.3.6
-192 silly currentTree | `-- commander@1.0.5
-192 silly currentTree +-- pm2-axon@2.0.11
-192 silly currentTree +-- pm2-deploy@0.2.1
-192 silly currentTree | `-- async@1.4.2
-192 silly currentTree +-- pm2-multimeter@0.1.2
-192 silly currentTree +-- pm2@1.1.3
-192 silly currentTree | `-- semver@5.1.1
-192 silly currentTree +-- pmx@0.6.2
-192 silly currentTree +-- preserve@0.2.0
-192 silly currentTree +-- process-nextick-args@1.0.7
-192 silly currentTree +-- proxy-addr@1.1.2
-192 silly currentTree +-- qs@6.2.0
-192 silly currentTree +-- random-bytes@1.0.0
-192 silly currentTree +-- randomatic@1.1.5
-192 silly currentTree +-- range-parser@1.2.0
-192 silly currentTree +-- raw-body@2.1.7
-192 silly currentTree +-- readable-stream@1.1.14
-192 silly currentTree +-- readdirp@2.1.0
-192 silly currentTree | +-- isarray@1.0.0
-192 silly currentTree | `-- readable-stream@2.1.4
-192 silly currentTree +-- redis-commands@1.2.0
-192 silly currentTree +-- redis-parser@2.0.3
-192 silly currentTree +-- redis@2.6.2
-192 silly currentTree +-- regex-cache@0.4.3
-192 silly currentTree +-- regexp-clone@0.0.1
-192 silly currentTree +-- repeat-element@1.1.2
-192 silly currentTree +-- repeat-string@1.5.4
-192 silly currentTree +-- repeating@1.1.3
-192 silly currentTree +-- require_optional@1.0.0
-192 silly currentTree +-- resolve-from@2.0.0
-192 silly currentTree +-- rimraf@2.4.5
-192 silly currentTree +-- safe-json-stringify@1.0.3
-192 silly currentTree +-- semver@5.2.0
-192 silly currentTree +-- send@0.14.1
-192 silly currentTree +-- serve-static@1.11.1
-192 silly currentTree +-- set-immediate-shim@1.0.1
-192 silly currentTree +-- setprototypeof@1.0.1
-192 silly currentTree +-- shelljs@0.6.0
-192 silly currentTree +-- sliced@1.0.1
-192 silly currentTree +-- source-map-support@0.4.0
-192 silly currentTree +-- source-map@0.1.32
-192 silly currentTree +-- sprintf-js@1.0.3
-192 silly currentTree +-- statuses@1.3.0
-192 silly currentTree +-- streamsearch@0.1.2
-192 silly currentTree +-- string_decoder@0.10.31
-192 silly currentTree +-- strip-ansi@3.0.1
-192 silly currentTree +-- supports-color@2.0.0
-192 silly currentTree +-- topo@1.1.0
-192 silly currentTree +-- tv4@1.0.18
-192 silly currentTree +-- type-is@1.6.13
-192 silly currentTree +-- typedarray@0.0.6
-192 silly currentTree +-- uc.micro@1.0.2
-192 silly currentTree +-- uid-safe@2.1.1
-192 silly currentTree +-- uid2@0.0.3
-192 silly currentTree +-- underscore.string@2.4.0
-192 silly currentTree +-- underscore@1.7.0
-192 silly currentTree +-- unpipe@1.0.0
-192 silly currentTree +-- util-deprecate@1.0.2
-192 silly currentTree +-- utils-merge@1.0.0
-192 silly currentTree +-- vary@1.1.0
-192 silly currentTree +-- vizion@0.2.12
-192 silly currentTree | `-- async@0.9.0
-192 silly currentTree +-- wrappy@1.0.2
-192 silly currentTree +-- xtend@4.0.1
-192 silly currentTree `-- yamljs@0.2.7
-192 silly currentTree   +-- argparse@0.1.16
-192 silly currentTree   +-- glob@4.5.3
-192 silly currentTree   `-- minimatch@2.0.10
-193 silly idealTree hjl-blog@1.0.0
-193 silly idealTree +-- accepts@1.3.3
-193 silly idealTree +-- amdefine@1.0.0
-193 silly idealTree +-- amp-message@0.1.2
-193 silly idealTree +-- amp@0.3.1
-193 silly idealTree +-- ansi-regex@2.0.0
-193 silly idealTree +-- ansi-styles@2.2.1
-193 silly idealTree +-- anymatch@1.3.0
-193 silly idealTree +-- append-field@0.1.0
-193 silly idealTree +-- argparse@1.0.7
-193 silly idealTree +-- arr-diff@2.0.0
-193 silly idealTree +-- arr-flatten@1.0.1
-193 silly idealTree +-- array-flatten@1.1.1
-193 silly idealTree +-- array-unique@0.2.1
-193 silly idealTree +-- arrify@1.0.1
-193 silly idealTree +-- async-each@1.0.0
-193 silly idealTree +-- async@1.5.2
-193 silly idealTree +-- balanced-match@0.4.1
-193 silly idealTree +-- base64-url@1.2.2
-193 silly idealTree +-- base64url@1.0.6
-193 silly idealTree +-- binary-extensions@1.5.0
-193 silly idealTree +-- bluebird@3.4.1
-193 silly idealTree +-- body-parser@1.15.2
-193 silly idealTree +-- brace-expansion@1.1.5
-193 silly idealTree +-- braces@1.8.5
-193 silly idealTree +-- bson@0.4.23
-193 silly idealTree +-- buffer-equal-constant-time@1.0.1
-193 silly idealTree +-- buffer-shims@1.0.0
-193 silly idealTree +-- bunyan@1.8.1
-193 silly idealTree +-- busboy@0.2.13
-193 silly idealTree +-- bytes@2.4.0
-193 silly idealTree +-- camelcase-keys@1.0.0
-193 silly idealTree +-- camelcase@1.2.1
-193 silly idealTree +-- ccap@0.6.10
-193 silly idealTree | +-- async@1.4.2
-193 silly idealTree | `-- nan@1.7.0
-193 silly idealTree +-- chalk@1.1.1
-193 silly idealTree +-- charm@0.1.2
-193 silly idealTree +-- chokidar@1.4.3
-193 silly idealTree +-- cli-table@0.3.1
-193 silly idealTree +-- coffee-script@1.10.0
-193 silly idealTree +-- colors@1.0.3
-193 silly idealTree +-- commander@2.9.0
-193 silly idealTree +-- composable-middleware@0.3.0
-193 silly idealTree +-- compressible@2.0.8
-193 silly idealTree +-- compression@1.6.2
-193 silly idealTree | `-- bytes@2.3.0
-193 silly idealTree +-- concat-map@0.0.1
-193 silly idealTree +-- concat-stream@1.4.10
-193 silly idealTree +-- configurable@0.0.1
-193 silly idealTree +-- connect-redis@3.1.0
-193 silly idealTree +-- content-disposition@0.5.1
-193 silly idealTree +-- content-type@1.0.2
-193 silly idealTree +-- cookie-parser@1.4.3
-193 silly idealTree +-- cookie-signature@1.0.6
-193 silly idealTree +-- cookie@0.3.1
-193 silly idealTree +-- core-util-is@1.0.2
-193 silly idealTree +-- cors@2.7.1
-193 silly idealTree +-- crc@3.4.0
-193 silly idealTree +-- cron@1.1.0
-193 silly idealTree +-- debug@2.2.0
-193 silly idealTree +-- depd@1.1.0
-193 silly idealTree +-- destroy@1.0.4
-193 silly idealTree +-- dicer@0.2.5
-193 silly idealTree +-- double-ended-queue@2.1.0-0
-193 silly idealTree +-- dtrace-provider@0.6.0
-193 silly idealTree +-- ecdsa-sig-formatter@1.0.7
-193 silly idealTree +-- ee-first@1.1.1
-193 silly idealTree +-- encodeurl@1.0.1
-193 silly idealTree +-- entities@1.1.1
-193 silly idealTree +-- errorhandler@1.4.3
-193 silly idealTree +-- es6-promise@3.0.2
-193 silly idealTree +-- escape-html@1.0.3
-193 silly idealTree +-- escape-regexp@0.0.1
-193 silly idealTree +-- escape-string-regexp@1.0.5
-193 silly idealTree +-- etag@1.7.0
-193 silly idealTree +-- eventemitter2@0.4.14
-193 silly idealTree +-- expand-brackets@0.1.5
-193 silly idealTree +-- expand-range@1.8.2
-193 silly idealTree +-- express-jwt@3.4.0
-193 silly idealTree | `-- jsonwebtoken@5.7.0
-193 silly idealTree +-- express-session@1.14.0
-193 silly idealTree +-- express-unless@0.3.0
-193 silly idealTree +-- express@4.14.0
-193 silly idealTree +-- extglob@0.3.2
-193 silly idealTree +-- filename-regex@2.0.0
-193 silly idealTree +-- fill-range@2.2.3
-193 silly idealTree +-- finalhandler@0.5.0
-193 silly idealTree +-- for-in@0.1.5
-193 silly idealTree +-- for-own@0.1.4
-193 silly idealTree +-- forwarded@0.1.0
-193 silly idealTree +-- fresh@0.3.0
-193 silly idealTree +-- get-stdin@4.0.1
-193 silly idealTree +-- glob-base@0.3.0
-193 silly idealTree +-- glob-parent@2.0.0
-193 silly idealTree +-- glob@6.0.4
-193 silly idealTree +-- graceful-fs@4.1.4
-193 silly idealTree +-- graceful-readlink@1.0.1
-193 silly idealTree +-- has-ansi@2.0.0
-193 silly idealTree +-- hoek@2.16.3
-193 silly idealTree +-- hooks-fixed@1.1.0
-193 silly idealTree +-- http-errors@1.5.0
-193 silly idealTree +-- iconv-lite@0.4.13
-193 silly idealTree +-- ikt@0.0.0
-193 silly idealTree +-- indent-string@1.2.2
-193 silly idealTree | `-- minimist@1.2.0
-193 silly idealTree +-- inflight@1.0.5
-193 silly idealTree +-- inherits@2.0.1
-193 silly idealTree +-- ipaddr.js@1.1.1
-193 silly idealTree +-- is-binary-path@1.0.1
-193 silly idealTree +-- is-buffer@1.1.3
-193 silly idealTree +-- is-dotfile@1.0.2
-193 silly idealTree +-- is-equal-shallow@0.1.3
-193 silly idealTree +-- is-extendable@0.1.1
-193 silly idealTree +-- is-extglob@1.0.0
-193 silly idealTree +-- is-finite@1.0.1
-193 silly idealTree +-- is-glob@2.0.1
-193 silly idealTree +-- is-number@2.1.0
-193 silly idealTree +-- is-posix-bracket@0.1.1
-193 silly idealTree +-- is-primitive@2.0.0
-193 silly idealTree +-- isarray@0.0.1
-193 silly idealTree +-- isemail@1.2.0
-193 silly idealTree +-- isobject@2.1.0
-193 silly idealTree | `-- isarray@1.0.0
-193 silly idealTree +-- joi@6.10.1
-193 silly idealTree +-- json-stringify-safe@5.0.1
-193 silly idealTree +-- jsonwebtoken@7.0.1
-193 silly idealTree +-- jwa@1.1.3
-193 silly idealTree +-- jws@3.1.3
-193 silly idealTree +-- kareem@1.1.3
-193 silly idealTree +-- keypress@0.1.0
-193 silly idealTree +-- kind-of@3.0.3
-193 silly idealTree +-- lazy@1.0.11
-193 silly idealTree +-- linkify-it@2.0.0
-193 silly idealTree +-- lodash._baseset@4.3.0
-193 silly idealTree +-- lodash._basetostring@4.12.0
-193 silly idealTree +-- lodash._stringtopath@4.8.0
-193 silly idealTree +-- lodash.set@4.2.0
-193 silly idealTree +-- lodash@4.13.1
-193 silly idealTree +-- map-obj@1.0.1
-193 silly idealTree +-- markdown-it@7.0.0
-193 silly idealTree +-- mdurl@1.0.1
-193 silly idealTree +-- media-typer@0.3.0
-193 silly idealTree +-- meow@2.0.0
-193 silly idealTree | `-- minimist@1.2.0
-193 silly idealTree +-- merge-descriptors@1.0.1
-193 silly idealTree +-- methods@1.1.2
-193 silly idealTree +-- micromatch@2.3.10
-193 silly idealTree +-- mime-db@1.23.0
-193 silly idealTree +-- mime-types@2.1.11
-193 silly idealTree +-- mime@1.3.4
-193 silly idealTree +-- minimatch@3.0.2
-193 silly idealTree +-- minimist@0.0.8
-193 silly idealTree +-- mkdirp@0.5.1
-193 silly idealTree +-- moment-timezone@0.3.1
-193 silly idealTree +-- moment@2.14.1
-193 silly idealTree +-- mongodb-core@1.3.18
-193 silly idealTree +-- mongodb@2.1.18
-193 silly idealTree | `-- readable-stream@1.0.31
-193 silly idealTree +-- mongoose@4.5.3
-193 silly idealTree +-- mpath@0.2.1
-193 silly idealTree +-- mpromise@0.5.5
-193 silly idealTree +-- mquery@1.11.0
-193 silly idealTree | +-- bluebird@2.10.2
-193 silly idealTree | `-- sliced@0.0.5
-193 silly idealTree +-- ms@0.7.1
-193 silly idealTree +-- multer@1.1.0
-193 silly idealTree | +-- concat-stream@1.5.1
-193 silly idealTree | +-- isarray@1.0.0
-193 silly idealTree | +-- object-assign@3.0.0
-193 silly idealTree | `-- readable-stream@2.0.6
-193 silly idealTree +-- muri@1.1.0
-193 silly idealTree +-- mv@2.1.1
-193 silly idealTree +-- nan@2.4.0
-193 silly idealTree +-- ncp@2.0.0
-193 silly idealTree +-- negotiator@0.6.1
-193 silly idealTree +-- node-schedule@0.1.13
-193 silly idealTree +-- normalize-path@2.0.1
-193 silly idealTree +-- nssocket@0.6.0
-193 silly idealTree +-- number-is-nan@1.0.0
-193 silly idealTree +-- oauth@0.9.14
-193 silly idealTree +-- object-assign@1.0.0
-193 silly idealTree +-- object.omit@2.0.0
-193 silly idealTree +-- on-finished@2.3.0
-193 silly idealTree +-- on-headers@1.0.1
-193 silly idealTree +-- once@1.3.3
-193 silly idealTree +-- parse-glob@3.0.4
-193 silly idealTree +-- parseurl@1.3.1
-193 silly idealTree +-- passport-github@1.1.0
-193 silly idealTree +-- passport-local@1.0.0
-193 silly idealTree +-- passport-oauth@0.1.15
-193 silly idealTree | `-- passport@0.1.18
-193 silly idealTree +-- passport-oauth2@1.3.0
-193 silly idealTree +-- passport-qq@0.0.3
-193 silly idealTree +-- passport-strategy@1.0.0
-193 silly idealTree +-- passport@0.3.2
-193 silly idealTree +-- path-is-absolute@1.0.0
-193 silly idealTree +-- path-to-regexp@0.1.7
-193 silly idealTree +-- pause@0.0.1
-193 silly idealTree +-- pidusage@1.0.4
-193 silly idealTree +-- pkginfo@0.2.3
-193 silly idealTree +-- pm2-axon-rpc@0.3.6
-193 silly idealTree | `-- commander@1.0.5
-193 silly idealTree +-- pm2-axon@2.0.11
-193 silly idealTree +-- pm2-deploy@0.2.1
-193 silly idealTree | `-- async@1.4.2
-193 silly idealTree +-- pm2-multimeter@0.1.2
-193 silly idealTree +-- pm2@1.1.3
-193 silly idealTree | `-- semver@5.1.1
-193 silly idealTree +-- pmx@0.6.2
-193 silly idealTree +-- preserve@0.2.0
-193 silly idealTree +-- process-nextick-args@1.0.7
-193 silly idealTree +-- proxy-addr@1.1.2
-193 silly idealTree +-- qs@6.2.0
-193 silly idealTree +-- random-bytes@1.0.0
-193 silly idealTree +-- randomatic@1.1.5
-193 silly idealTree +-- range-parser@1.2.0
-193 silly idealTree +-- raw-body@2.1.7
-193 silly idealTree +-- readable-stream@1.1.14
-193 silly idealTree +-- readdirp@2.1.0
-193 silly idealTree | +-- isarray@1.0.0
-193 silly idealTree | `-- readable-stream@2.1.4
-193 silly idealTree +-- redis-commands@1.2.0
-193 silly idealTree +-- redis-parser@2.0.3
-193 silly idealTree +-- redis@2.6.2
-193 silly idealTree +-- regex-cache@0.4.3
-193 silly idealTree +-- regexp-clone@0.0.1
-193 silly idealTree +-- repeat-element@1.1.2
-193 silly idealTree +-- repeat-string@1.5.4
-193 silly idealTree +-- repeating@1.1.3
-193 silly idealTree +-- require_optional@1.0.0
-193 silly idealTree +-- resolve-from@2.0.0
-193 silly idealTree +-- rimraf@2.4.5
-193 silly idealTree +-- safe-json-stringify@1.0.3
-193 silly idealTree +-- semver@5.2.0
-193 silly idealTree +-- send@0.14.1
-193 silly idealTree +-- serve-static@1.11.1
-193 silly idealTree +-- set-immediate-shim@1.0.1
-193 silly idealTree +-- setprototypeof@1.0.1
-193 silly idealTree +-- shelljs@0.6.0
-193 silly idealTree +-- sliced@1.0.1
-193 silly idealTree +-- source-map-support@0.4.0
-193 silly idealTree +-- source-map@0.1.32
-193 silly idealTree +-- sprintf-js@1.0.3
-193 silly idealTree +-- statuses@1.3.0
-193 silly idealTree +-- streamsearch@0.1.2
-193 silly idealTree +-- string_decoder@0.10.31
-193 silly idealTree +-- strip-ansi@3.0.1
-193 silly idealTree +-- supports-color@2.0.0
-193 silly idealTree +-- topo@1.1.0
-193 silly idealTree +-- tv4@1.0.18
-193 silly idealTree +-- type-is@1.6.13
-193 silly idealTree +-- typedarray@0.0.6
-193 silly idealTree +-- uc.micro@1.0.2
-193 silly idealTree +-- uid-safe@2.1.1
-193 silly idealTree +-- uid2@0.0.3
-193 silly idealTree +-- underscore.string@2.4.0
-193 silly idealTree +-- underscore@1.7.0
-193 silly idealTree +-- unpipe@1.0.0
-193 silly idealTree +-- util-deprecate@1.0.2
-193 silly idealTree +-- utils-merge@1.0.0
-193 silly idealTree +-- vary@1.1.0
-193 silly idealTree +-- vizion@0.2.12
-193 silly idealTree | `-- async@0.9.0
-193 silly idealTree +-- wrappy@1.0.2
-193 silly idealTree +-- xtend@4.0.1
-193 silly idealTree `-- yamljs@0.2.7
-193 silly idealTree   +-- argparse@0.1.16
-193 silly idealTree   +-- glob@4.5.3
-193 silly idealTree   `-- minimatch@2.0.10
-194 silly generateActionsToTake Starting
-195 silly install generateActionsToTake
-196 silly generateActionsToTake Finishing
-197 silly diffTrees action count 4
-198 silly diffTrees add async@1.4.2
-199 silly diffTrees add nan@1.7.0
-200 silly diffTrees add node-schedule@0.1.13
-201 silly diffTrees add ccap@0.6.10
-202 silly decomposeActions action count 32
-203 silly decomposeActions fetch async@1.4.2
-204 silly decomposeActions extract async@1.4.2
-205 silly decomposeActions test async@1.4.2
-206 silly decomposeActions preinstall async@1.4.2
-207 silly decomposeActions build async@1.4.2
-208 silly decomposeActions install async@1.4.2
-209 silly decomposeActions postinstall async@1.4.2
-210 silly decomposeActions finalize async@1.4.2
-211 silly decomposeActions fetch nan@1.7.0
-212 silly decomposeActions extract nan@1.7.0
-213 silly decomposeActions test nan@1.7.0
-214 silly decomposeActions preinstall nan@1.7.0
-215 silly decomposeActions build nan@1.7.0
-216 silly decomposeActions install nan@1.7.0
-217 silly decomposeActions postinstall nan@1.7.0
-218 silly decomposeActions finalize nan@1.7.0
-219 silly decomposeActions fetch node-schedule@0.1.13
-220 silly decomposeActions extract node-schedule@0.1.13
-221 silly decomposeActions test node-schedule@0.1.13
-222 silly decomposeActions preinstall node-schedule@0.1.13
-223 silly decomposeActions build node-schedule@0.1.13
-224 silly decomposeActions install node-schedule@0.1.13
-225 silly decomposeActions postinstall node-schedule@0.1.13
-226 silly decomposeActions finalize node-schedule@0.1.13
-227 silly decomposeActions fetch ccap@0.6.10
-228 silly decomposeActions extract ccap@0.6.10
-229 silly decomposeActions test ccap@0.6.10
-230 silly decomposeActions preinstall ccap@0.6.10
-231 silly decomposeActions build ccap@0.6.10
-232 silly decomposeActions install ccap@0.6.10
-233 silly decomposeActions postinstall ccap@0.6.10
-234 silly decomposeActions finalize ccap@0.6.10
-235 silly executeActions Starting
-236 silly install executeActions
-237 silly doSerial global-install 0
-238 silly doParallel fetch 4
-239 verbose correctMkdir C:\Users\lenovo\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
-240 verbose lock using C:\Users\lenovo\AppData\Roaming\npm-cache\_locks\staging-f1c15270782e591f.lock for C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging
-241 silly doParallel extract 4
-242 silly extract async@1.4.2
-243 silly extract nan@1.7.0
-244 silly extract node-schedule@0.1.13
-245 silly extract ccap@0.6.10
-246 verbose unbuild node_modules\.staging\async-9fdb777b
-247 verbose unbuild node_modules\.staging\node-schedule-41f7f161
-248 silly gentlyRm C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\async-9fdb777b is being purged from base C:\Users\lenovo\Desktop\code\HJL-Blog
-249 verbose gentlyRm don't care about contents; nuking C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\async-9fdb777b
-250 silly gentlyRm C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\node-schedule-41f7f161 is being purged from base C:\Users\lenovo\Desktop\code\HJL-Blog
-251 verbose gentlyRm don't care about contents; nuking C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\node-schedule-41f7f161
-252 verbose tar unpack C:\Users\lenovo\AppData\Roaming\npm-cache\async\1.4.2\package.tgz
-253 verbose tar unpacking to C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\async-9fdb777b
-254 silly gentlyRm C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\async-9fdb777b is being purged
-255 verbose gentlyRm don't care about contents; nuking C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\async-9fdb777b
-256 verbose tar unpack C:\Users\lenovo\AppData\Roaming\npm-cache\node-schedule\0.1.13\package.tgz
-257 verbose tar unpacking to C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\node-schedule-41f7f161
-258 silly gentlyRm C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\node-schedule-41f7f161 is being purged
-259 verbose gentlyRm don't care about contents; nuking C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\node-schedule-41f7f161
-260 silly gunzTarPerm modes [ '777', '666' ]
-261 silly gunzTarPerm modes [ '777', '666' ]
-262 silly gunzTarPerm extractEntry package.json
-263 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-264 silly gunzTarPerm extractEntry package.json
-265 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
-266 verbose unbuild node_modules\.staging\nan-910c870f
-267 silly gentlyRm C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\nan-910c870f is being purged from base C:\Users\lenovo\Desktop\code\HJL-Blog
-268 verbose gentlyRm don't care about contents; nuking C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\nan-910c870f
-269 verbose tar unpack C:\Users\lenovo\AppData\Roaming\npm-cache\nan\1.7.0\package.tgz
-270 verbose tar unpacking to C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\nan-910c870f
-271 silly gentlyRm C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\nan-910c870f is being purged
-272 verbose gentlyRm don't care about contents; nuking C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\nan-910c870f
-273 silly gunzTarPerm modes [ '777', '666' ]
-274 verbose unbuild node_modules\.staging\ccap-89b81535
-275 silly gentlyRm C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\ccap-89b81535 is being purged from base C:\Users\lenovo\Desktop\code\HJL-Blog
-276 verbose gentlyRm don't care about contents; nuking C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\ccap-89b81535
-277 verbose tar unpack C:\Users\lenovo\AppData\Roaming\npm-cache\ccap\0.6.10\package.tgz
-278 verbose tar unpacking to C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\ccap-89b81535
-279 silly gentlyRm C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\ccap-89b81535 is being purged
-280 verbose gentlyRm don't care about contents; nuking C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\ccap-89b81535
-281 silly gunzTarPerm modes [ '777', '666' ]
-282 silly gunzTarPerm extractEntry LICENSE
-283 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
-284 silly gunzTarPerm extractEntry CHANGELOG.md
-285 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
-286 silly gunzTarPerm extractEntry .npmignore
-287 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
-288 silly gunzTarPerm extractEntry README.md
-289 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
-290 silly gunzTarPerm extractEntry package.json
-291 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
-292 silly gunzTarPerm extractEntry include_dirs.js
-293 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
-294 silly gunzTarPerm extractEntry LICENSE.md
-295 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
-296 silly gunzTarPerm extractEntry package.json
-297 silly gunzTarPerm extractEntry lib/async.js
-298 silly gunzTarPerm modified mode [ 'lib/async.js', 420, 438 ]
-299 silly gunzTarPerm extractEntry lib/increment.js
-300 silly gunzTarPerm modified mode [ 'lib/increment.js', 420, 438 ]
-301 silly gunzTarPerm extractEntry lib/schedule.js
-302 silly gunzTarPerm modified mode [ 'lib/schedule.js', 420, 438 ]
-303 silly gunzTarPerm extractEntry .npmignore
-304 silly gunzTarPerm extractEntry index.js
-305 silly gunzTarPerm extractEntry test/convenience-method-test.js
-306 silly gunzTarPerm modified mode [ 'test/convenience-method-test.js', 420, 438 ]
-307 silly gunzTarPerm extractEntry .dntrc
-308 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
-309 silly gunzTarPerm extractEntry appveyor.yml
-310 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
-311 silly gunzTarPerm extractEntry make.js
-312 silly gunzTarPerm extractEntry example/custom_get.js
-313 silly gunzTarPerm extractEntry nan.h
-314 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
-315 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
-316 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
-317 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
-318 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
-319 silly gunzTarPerm extractEntry nan_new.h
-320 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
-321 silly gunzTarPerm extractEntry nan_string_bytes.h
-322 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
-323 silly gunzTarPerm extractEntry CHANGELOG.md
-324 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
-325 silly gunzTarPerm extractEntry example/custom_get2.js
-326 silly gunzTarPerm extractEntry example/default_get.js
-327 silly gunzTarPerm extractEntry test/date-convenience-methods-test.js
-328 silly gunzTarPerm modified mode [ 'test/date-convenience-methods-test.js', 420, 438 ]
-329 silly gunzTarPerm extractEntry test/job-test.js
-330 silly gunzTarPerm modified mode [ 'test/job-test.js', 420, 438 ]
-331 silly gunzTarPerm extractEntry test/range-test.js
-332 silly gunzTarPerm modified mode [ 'test/range-test.js', 420, 438 ]
-333 silly gunzTarPerm extractEntry test/recurrence-rule-test.js
-334 silly gunzTarPerm modified mode [ 'test/recurrence-rule-test.js', 420, 438 ]
-335 silly gunzTarPerm extractEntry example/web_example.js
-336 silly gunzTarPerm extractEntry binding.gyp
-337 silly gunzTarPerm extractEntry .travis.yml
-338 silly gunzTarPerm extractEntry lib/dir.js
-339 silly gunzTarPerm extractEntry lib/gen.js
-340 silly gunzTarPerm extractEntry lib/hcap.js
-341 silly gunzTarPerm extractEntry lib/timer.js
-342 silly gunzTarPerm extractEntry addon/cap.cc
-343 silly gunzTarPerm extractEntry addon/cap.h
-344 silly gunzTarPerm extractEntry addon/hcaptha.cc
-345 silly gunzTarPerm extractEntry addon/jpeglib/jddctmgr.c
-346 silly gentlyRm C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\async-9fdb777b\node_modules is being purged
-347 verbose gentlyRm don't care about contents; nuking C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\async-9fdb777b\node_modules
-348 silly gunzTarPerm extractEntry addon/jpeglib/CImg.h
-349 silly gentlyRm C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\node-schedule-41f7f161\node_modules is being purged
-350 verbose gentlyRm don't care about contents; nuking C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\node-schedule-41f7f161\node_modules
-351 silly gunzTarPerm extractEntry addon/jpeglib/Licence_CeCILL_V2-en.txt
-352 silly gunzTarPerm extractEntry addon/jpeglib/README.txt
-353 silly gentlyRm C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\nan-910c870f\node_modules is being purged
-354 verbose gentlyRm don't care about contents; nuking C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\nan-910c870f\node_modules
-355 silly gunzTarPerm extractEntry addon/jpeglib/cderror.h
-356 silly gunzTarPerm extractEntry addon/jpeglib/cdjpeg.h
-357 silly gunzTarPerm extractEntry addon/jpeglib/jaricom.c
-358 silly gunzTarPerm extractEntry addon/jpeglib/jcapimin.c
-359 silly gunzTarPerm extractEntry addon/jpeglib/jcapistd.c
-360 silly gunzTarPerm extractEntry addon/jpeglib/jcarith.c
-361 silly gunzTarPerm extractEntry addon/jpeglib/jccoefct.c
-362 silly gunzTarPerm extractEntry addon/jpeglib/jccolor.c
-363 silly gunzTarPerm extractEntry addon/jpeglib/jcdctmgr.c
-364 silly gunzTarPerm extractEntry addon/jpeglib/jchuff.c
-365 silly gunzTarPerm extractEntry addon/jpeglib/jcinit.c
-366 silly gunzTarPerm extractEntry addon/jpeglib/jcmainct.c
-367 silly gunzTarPerm extractEntry addon/jpeglib/jcmarker.c
-368 silly gunzTarPerm extractEntry addon/jpeglib/jcmaster.c
-369 silly gunzTarPerm extractEntry addon/jpeglib/jcomapi.c
-370 silly gunzTarPerm extractEntry addon/jpeglib/jconfig.h
-371 silly gunzTarPerm extractEntry addon/jpeglib/jcparam.c
-372 silly gunzTarPerm extractEntry addon/jpeglib/jcprepct.c
-373 silly gunzTarPerm extractEntry addon/jpeglib/jcsample.c
-374 silly gunzTarPerm extractEntry addon/jpeglib/jctrans.c
-375 silly gunzTarPerm extractEntry addon/jpeglib/jdapimin.c
-376 silly gunzTarPerm extractEntry addon/jpeglib/jdapistd.c
-377 silly gunzTarPerm extractEntry addon/jpeglib/jdarith.c
-378 silly gunzTarPerm extractEntry addon/jpeglib/jdatadst.c
-379 silly gunzTarPerm extractEntry addon/jpeglib/jdatasrc.c
-380 silly gunzTarPerm extractEntry addon/jpeglib/jdcoefct.c
-381 silly gunzTarPerm extractEntry addon/jpeglib/jdcolor.c
-382 silly gunzTarPerm extractEntry addon/jpeglib/jdct.h
-383 silly gunzTarPerm extractEntry addon/jpeglib/Licence_CeCILL-C_V1-en.txt
-384 silly gunzTarPerm extractEntry addon/jpeglib/jdhuff.c
-385 silly gunzTarPerm extractEntry addon/jpeglib/jdinput.c
-386 silly gunzTarPerm extractEntry addon/jpeglib/jdmainct.c
-387 silly gunzTarPerm extractEntry addon/jpeglib/jdmarker.c
-388 silly gunzTarPerm extractEntry addon/jpeglib/jdmaster.c
-389 silly gunzTarPerm extractEntry addon/jpeglib/jdmerge.c
-390 silly gunzTarPerm extractEntry addon/jpeglib/jdpostct.c
-391 silly gunzTarPerm extractEntry addon/jpeglib/jdsample.c
-392 silly gunzTarPerm extractEntry addon/jpeglib/jdtrans.c
-393 silly gunzTarPerm extractEntry addon/jpeglib/jerror.c
-394 silly gunzTarPerm extractEntry addon/jpeglib/jerror.h
-395 silly gunzTarPerm extractEntry addon/jpeglib/jfdctflt.c
-396 silly gunzTarPerm extractEntry addon/jpeglib/jfdctfst.c
-397 silly gunzTarPerm extractEntry addon/jpeglib/jfdctint.c
-398 silly gunzTarPerm extractEntry addon/jpeglib/jidctflt.c
-399 silly gunzTarPerm extractEntry addon/jpeglib/jidctfst.c
-400 silly gunzTarPerm extractEntry addon/jpeglib/jidctint.c
-401 silly gunzTarPerm extractEntry addon/jpeglib/jinclude.h
-402 silly gunzTarPerm extractEntry addon/jpeglib/jmemmgr.c
-403 silly gunzTarPerm extractEntry addon/jpeglib/jmemnobs.c
-404 silly gunzTarPerm extractEntry addon/jpeglib/jmemsys.h
-405 silly gunzTarPerm extractEntry addon/jpeglib/jmorecfg.h
-406 silly gunzTarPerm extractEntry addon/jpeglib/jpegint.h
-407 silly gunzTarPerm extractEntry addon/jpeglib/jpeglib.h
-408 silly gunzTarPerm extractEntry addon/jpeglib/jquant1.c
-409 silly gunzTarPerm extractEntry addon/jpeglib/jquant2.c
-410 silly gunzTarPerm extractEntry addon/jpeglib/jutils.c
-411 silly gunzTarPerm extractEntry addon/jpeglib/jversion.h
-412 silly gunzTarPerm extractEntry addon/jpeglib/libjpeg.so
-413 silly gunzTarPerm extractEntry addon/jpeglib/plugins/jpeg_buffer.h
-414 silly gunzTarPerm extractEntry addon/jpeglib/plugins/add_fileformat.h
-415 silly gunzTarPerm extractEntry addon/jpeglib/plugins/cimg_ipl.h
-416 silly gunzTarPerm extractEntry addon/jpeglib/plugins/cimgmatlab.h
-417 silly gunzTarPerm extractEntry addon/jpeglib/plugins/draw_gradient.h
-418 silly gunzTarPerm extractEntry addon/jpeglib/plugins/cimgIPL.h
-419 silly gunzTarPerm extractEntry addon/jpeglib/plugins/loop_macros.h
-420 silly gunzTarPerm extractEntry addon/jpeglib/plugins/nlmeans.h
-421 silly gunzTarPerm extractEntry addon/jpeglib/plugins/skeleton.h
-422 silly gunzTarPerm extractEntry addon/jpeglib/plugins/vrml.h
-423 silly gunzTarPerm extractEntry addon/jpeglib/plugins/vtk.h
-424 silly gunzTarPerm extractEntry addon/jpeglib/resources/compile_win_icl.bat
-425 silly gunzTarPerm extractEntry addon/jpeglib/resources/compile_win_visualcpp.bat
-426 silly gunzTarPerm extractEntry addon/jpeglib/transupp.h
-427 silly gunzTarPerm extractEntry addon/libjpeg.dll
-428 silly gunzTarPerm extractEntry benchmark/generate.js
-429 silly gunzTarPerm extractEntry readme.md
-430 silly gunzTarPerm extractEntry test/main_test.js
-431 silly gentlyRm C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\ccap-89b81535\node_modules is being purged
-432 verbose gentlyRm don't care about contents; nuking C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\ccap-89b81535\node_modules
-433 silly doParallel preinstall 4
-434 silly preinstall async@1.4.2 C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\async-9fdb777b
-435 info lifecycle async@1.4.2~preinstall: async@1.4.2
-436 silly preinstall nan@1.7.0 C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\nan-910c870f
-437 info lifecycle nan@1.7.0~preinstall: nan@1.7.0
-438 silly preinstall node-schedule@0.1.13 C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\node-schedule-41f7f161
-439 info lifecycle node-schedule@0.1.13~preinstall: node-schedule@0.1.13
-440 silly preinstall ccap@0.6.10 C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\ccap-89b81535
-441 info lifecycle ccap@0.6.10~preinstall: ccap@0.6.10
-442 silly lifecycle async@1.4.2~preinstall: no script for preinstall, continuing
-443 silly lifecycle nan@1.7.0~preinstall: no script for preinstall, continuing
-444 verbose lifecycle ccap@0.6.10~preinstall: unsafe-perm in lifecycle true
-445 verbose lifecycle ccap@0.6.10~preinstall: PATH: D:\必备软件\node_modules\npm\bin\node-gyp-bin;C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\ccap-89b81535\node_modules\.bin;C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.bin;D:\必备软件;C:\Users\lenovo\bin;D:\必备软件\Git\mingw32\bin;D:\必备软件\Git\usr\local\bin;D:\必备软件\Git\usr\bin;D:\必备软件\Git\usr\bin;D:\必备软件\Git\mingw32\bin;D:\必备软件\Git\usr\bin;C:\Users\lenovo\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\必备软件;D\Heroku\bin;D:\Heroku\bin;C:\Program Files\Java\jdk1.8.0_91\bin;%JAVA_HOME\jre\bin;C:\Users\lenovo\AppData\Roaming\npm;D\Heroku\bin;D:\必备软件\python;D:\必备软件\Git\usr\bin\vendor_perl;D:\必备软件\Git\usr\bin\core_perl
-446 verbose lifecycle ccap@0.6.10~preinstall: CWD: C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\ccap-89b81535
-447 silly lifecycle ccap@0.6.10~preinstall: Args: [ '/d /s /c', 'node make.js' ]
-448 silly lifecycle node-schedule@0.1.13~preinstall: no script for preinstall, continuing
-449 silly lifecycle ccap@0.6.10~preinstall: Returned: code: 0  signal: null
-450 silly doReverseSerial remove 0
-451 silly doSerial move 0
-452 silly doSerial finalize 4
-453 silly finalize C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\ccap\node_modules\async
-454 silly finalize C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\ccap\node_modules\nan
-455 silly finalize C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\node-schedule
-456 silly finalize C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\ccap
-457 silly doSerial build 4
-458 silly build async@1.4.2
-459 info linkStuff async@1.4.2
-460 silly linkStuff async@1.4.2 has C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\ccap\node_modules as its parent node_modules
-461 verbose linkBins async@1.4.2
-462 verbose linkMans async@1.4.2
-463 silly build nan@1.7.0
-464 info linkStuff nan@1.7.0
-465 silly linkStuff nan@1.7.0 has C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\ccap\node_modules as its parent node_modules
-466 verbose linkBins nan@1.7.0
-467 verbose linkMans nan@1.7.0
-468 silly build node-schedule@0.1.13
-469 info linkStuff node-schedule@0.1.13
-470 silly linkStuff node-schedule@0.1.13 has C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules as its parent node_modules
-471 verbose linkBins node-schedule@0.1.13
-472 verbose linkMans node-schedule@0.1.13
-473 silly build ccap@0.6.10
-474 info linkStuff ccap@0.6.10
-475 silly linkStuff ccap@0.6.10 has C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules as its parent node_modules
-476 verbose linkBins ccap@0.6.10
-477 verbose linkMans ccap@0.6.10
-478 silly doSerial global-link 0
-479 silly doParallel update-linked 0
-480 silly doSerial install 4
-481 silly install async@1.4.2 C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\async-9fdb777b
-482 info lifecycle async@1.4.2~install: async@1.4.2
-483 silly lifecycle async@1.4.2~install: no script for install, continuing
-484 silly install nan@1.7.0 C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\nan-910c870f
-485 info lifecycle nan@1.7.0~install: nan@1.7.0
-486 silly lifecycle nan@1.7.0~install: no script for install, continuing
-487 silly install node-schedule@0.1.13 C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\node-schedule-41f7f161
-488 info lifecycle node-schedule@0.1.13~install: node-schedule@0.1.13
-489 silly lifecycle node-schedule@0.1.13~install: no script for install, continuing
-490 silly install ccap@0.6.10 C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging\ccap-89b81535
-491 info lifecycle ccap@0.6.10~install: ccap@0.6.10
-492 verbose lifecycle ccap@0.6.10~install: unsafe-perm in lifecycle true
-493 verbose lifecycle ccap@0.6.10~install: PATH: D:\必备软件\node_modules\npm\bin\node-gyp-bin;C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\ccap\node_modules\.bin;C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.bin;D:\必备软件;C:\Users\lenovo\bin;D:\必备软件\Git\mingw32\bin;D:\必备软件\Git\usr\local\bin;D:\必备软件\Git\usr\bin;D:\必备软件\Git\usr\bin;D:\必备软件\Git\mingw32\bin;D:\必备软件\Git\usr\bin;C:\Users\lenovo\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\必备软件;D\Heroku\bin;D:\Heroku\bin;C:\Program Files\Java\jdk1.8.0_91\bin;%JAVA_HOME\jre\bin;C:\Users\lenovo\AppData\Roaming\npm;D\Heroku\bin;D:\必备软件\python;D:\必备软件\Git\usr\bin\vendor_perl;D:\必备软件\Git\usr\bin\core_perl
-494 verbose lifecycle ccap@0.6.10~install: CWD: C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\ccap
-495 silly lifecycle ccap@0.6.10~install: Args: [ '/d /s /c', 'node-gyp rebuild' ]
-496 silly lifecycle ccap@0.6.10~install: Returned: code: 1  signal: null
-497 info lifecycle ccap@0.6.10~install: Failed to exec install script
-498 verbose unlock done using C:\Users\lenovo\AppData\Roaming\npm-cache\_locks\staging-f1c15270782e591f.lock for C:\Users\lenovo\Desktop\code\HJL-Blog\node_modules\.staging
-499 silly rollbackFailedOptional Starting
-500 silly rollbackFailedOptional Finishing
-501 silly runTopLevelLifecycles Starting
-502 silly runTopLevelLifecycles Finishing
-503 silly install printInstalled
-504 warn optional Skipping failed optional dependency /chokidar/fsevents:
-505 warn notsup Not compatible with your operating system or architecture: fsevents@1.0.12
-506 warn hjl-blog@1.0.0 No description
-507 verbose stack Error: ccap@0.6.10 install: `node-gyp rebuild`
-507 verbose stack Exit status 1
-507 verbose stack     at EventEmitter.<anonymous> (D:\必备软件\node_modules\npm\lib\utils\lifecycle.js:239:16)
-507 verbose stack     at emitTwo (events.js:106:13)
-507 verbose stack     at EventEmitter.emit (events.js:191:7)
-507 verbose stack     at ChildProcess.<anonymous> (D:\必备软件\node_modules\npm\lib\utils\spawn.js:24:14)
-507 verbose stack     at emitTwo (events.js:106:13)
-507 verbose stack     at ChildProcess.emit (events.js:191:7)
-507 verbose stack     at maybeClose (internal/child_process.js:850:16)
-507 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
-508 verbose pkgid ccap@0.6.10
-509 verbose cwd C:\Users\lenovo\Desktop\code\HJL-Blog
-510 error Windows_NT 6.1.7601
-511 error argv "D:\\必备软件\\node.exe" "D:\\必备软件\\node_modules\\npm\\bin\\npm-cli.js" "install" "ccap" "--save"
-512 error node v6.0.0
-513 error npm  v3.8.6
-514 error code ELIFECYCLE
-515 error ccap@0.6.10 install: `node-gyp rebuild`
-515 error Exit status 1
-516 error Failed at the ccap@0.6.10 install script 'node-gyp rebuild'.
-516 error Make sure you have the latest version of node.js and npm installed.
-516 error If you do, this is most likely a problem with the ccap package,
-516 error not with npm itself.
-516 error Tell the author that this fails on your system:
-516 error     node-gyp rebuild
-516 error You can get information on how to open an issue for this project with:
-516 error     npm bugs ccap
-516 error Or if that isn't available, you can get their info via:
-516 error     npm owner ls ccap
-516 error There is likely additional logging output above.
-517 verbose exit [ 1, true ]
+2 info using npm@2.14.20
+3 info using node@v4.4.1
+4 verbose install initial load of C:\Users\jialao\Desktop\HJL-Blog\package.json
+5 warn package.json hjl-blog@1.0.0 No description
+6 warn package.json hjl-blog@1.0.0 No README data
+7 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\bluebird\package.json
+8 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\body-parser\package.json
+9 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\bunyan\package.json
+10 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\composable-middleware\package.json
+11 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\compression\package.json
+12 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\connect-redis\package.json
+13 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\cookie-parser\package.json
+14 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\cors\package.json
+15 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\errorhandler\package.json
+16 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\express\package.json
+17 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\express-jwt\package.json
+18 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\express-session\package.json
+19 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\jsonwebtoken\package.json
+20 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\lodash\package.json
+21 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\markdown-it\package.json
+22 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\moment\package.json
+23 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\mongoose\package.json
+24 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\multer\package.json
+25 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\passport\package.json
+26 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\passport-github\package.json
+27 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\passport-local\package.json
+28 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\passport-qq\package.json
+29 verbose installManyTop reading scoped package data from C:\Users\jialao\Desktop\HJL-Blog\node_modules\pm2\package.json
+30 info package.json composable-middleware@0.3.0 No license field.
+31 info package.json express-jwt@3.4.0 No license field.
+32 info package.json passport-local@1.0.0 No license field.
+33 info package.json passport-qq@0.0.3 No license field.
+34 verbose readDependencies loading dependencies from C:\Users\jialao\Desktop\HJL-Blog\package.json
+35 silly cache add args [ 'ccap', null ]
+36 verbose cache add spec ccap
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'ccap',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'ccap',
+37 silly cache add   rawSpec: '',
+37 silly cache add   spec: 'latest',
+37 silly cache add   type: 'tag' }
+38 silly addNamed ccap@latest
+39 verbose addNamed "latest" is being treated as a dist-tag for ccap
+40 info addNameTag [ 'ccap', 'latest' ]
+41 silly mapToRegistry name ccap
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/ccap
+45 verbose addNameTag registry:https://registry.npmjs.org/ccap not in flight; fetching
+46 verbose request uri https://registry.npmjs.org/ccap
+47 verbose request no auth needed
+48 info attempt registry request try #1 at 11:47:27
+49 verbose request id db959dbb0c669dc0
+50 verbose etag "A99VG95UW2I62GQO945722GP3"
+51 http request GET https://registry.npmjs.org/ccap
+52 http 304 https://registry.npmjs.org/ccap
+53 verbose headers { date: 'Tue, 12 Jul 2016 03:47:28 GMT',
+53 verbose headers   via: '1.1 varnish',
+53 verbose headers   'cache-control': 'max-age=300',
+53 verbose headers   etag: '"A99VG95UW2I62GQO945722GP3"',
+53 verbose headers   age: '152',
+53 verbose headers   connection: 'keep-alive',
+53 verbose headers   'x-served-by': 'cache-lcy1127-LCY',
+53 verbose headers   'x-cache': 'HIT',
+53 verbose headers   'x-cache-hits': '1',
+53 verbose headers   'x-timer': 'S1468295248.495131,VS0,VE0',
+53 verbose headers   vary: 'Accept-Encoding' }
+54 silly get cb [ 304,
+54 silly get   { date: 'Tue, 12 Jul 2016 03:47:28 GMT',
+54 silly get     via: '1.1 varnish',
+54 silly get     'cache-control': 'max-age=300',
+54 silly get     etag: '"A99VG95UW2I62GQO945722GP3"',
+54 silly get     age: '152',
+54 silly get     connection: 'keep-alive',
+54 silly get     'x-served-by': 'cache-lcy1127-LCY',
+54 silly get     'x-cache': 'HIT',
+54 silly get     'x-cache-hits': '1',
+54 silly get     'x-timer': 'S1468295248.495131,VS0,VE0',
+54 silly get     vary: 'Accept-Encoding' } ]
+55 verbose etag https://registry.npmjs.org/ccap from cache
+56 verbose get saving ccap to C:\Users\jialao\AppData\Roaming\npm-cache\registry.npmjs.org\ccap\.cache.json
+57 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+58 silly addNameTag next cb for ccap with tag latest
+59 silly addNamed ccap@0.6.10
+60 verbose addNamed "0.6.10" is a plain semver version for ccap
+61 silly cache afterAdd ccap@0.6.10
+62 verbose afterAdd C:\Users\jialao\AppData\Roaming\npm-cache\ccap\0.6.10\package\package.json not in flight; writing
+63 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+64 verbose afterAdd C:\Users\jialao\AppData\Roaming\npm-cache\ccap\0.6.10\package\package.json written
+65 silly install resolved [ { author:
+65 silly install resolved      { name: 'doublespout',
+65 silly install resolved        email: 'snoopyxdy@163.com',
+65 silly install resolved        url: 'http://snoopyxdy.blog.163.com' },
+65 silly install resolved     name: 'ccap',
+65 silly install resolved     description: 'node.js generate captcha using c++ library CImg without install any other lib or software',
+65 silly install resolved     keywords: [ 'node', 'captcha', 'c++', 'image', 'CImg' ],
+65 silly install resolved     version: '0.6.10',
+65 silly install resolved     url: 'https://github.com/DoubleSpout/ccap',
+65 silly install resolved     homepage: 'https://github.com/DoubleSpout/ccap',
+65 silly install resolved     repository:
+65 silly install resolved      { type: 'git',
+65 silly install resolved        url: 'git+https://github.com/DoubleSpout/ccap.git' },
+65 silly install resolved     main: 'index.js',
+65 silly install resolved     engines: { node: '>=0.12.0' },
+65 silly install resolved     scripts:
+65 silly install resolved      { preinstall: 'node make.js',
+65 silly install resolved        install: 'node-gyp rebuild',
+65 silly install resolved        test: 'node ./test/main_test.js' },
+65 silly install resolved     gypfile: true,
+65 silly install resolved     _id: 'ccap@0.6.10',
+65 silly install resolved     _from: 'ccap@latest',
+65 silly install resolved     dist:
+65 silly install resolved      { shasum: '008fd555bf7e77ace265f99f4e10939bb8c1ac48',
+65 silly install resolved        tarball: 'https://registry.npmjs.org/ccap/-/ccap-0.6.10.tgz' },
+65 silly install resolved     dependencies: { async: '1.4.2', 'node-schedule': '0.1.13', nan: '1.7.0' },
+65 silly install resolved     _resolved: 'https://registry.npmjs.org/ccap/-/ccap-0.6.10.tgz',
+65 silly install resolved     gitHead: 'fa3e7b8f21792b5dfa7719a607f392253dcc5c34',
+65 silly install resolved     bugs: { url: 'https://github.com/DoubleSpout/ccap/issues' },
+65 silly install resolved     _shasum: '008fd555bf7e77ace265f99f4e10939bb8c1ac48',
+65 silly install resolved     _npmVersion: '2.11.3',
+65 silly install resolved     _nodeVersion: '0.12.7',
+65 silly install resolved     _npmUser: { name: 'doublespout', email: 'snoopyxdy@gmail.com' },
+65 silly install resolved     maintainers: [ [Object] ],
+65 silly install resolved     _npmOperationalInternal:
+65 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+65 silly install resolved        tmp: 'tmp/ccap-0.6.10.tgz_1467802425437_0.5992555178236216' },
+65 silly install resolved     directories: {},
+65 silly install resolved     readme: 'ERROR: No README data found!' } ]
+66 info install ccap@0.6.10 into C:\Users\jialao\Desktop\HJL-Blog
+67 info installOne ccap@0.6.10
+68 verbose installOne of ccap to C:\Users\jialao\Desktop\HJL-Blog not in flight; installing
+69 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+70 verbose lock using C:\Users\jialao\AppData\Roaming\npm-cache\_locks\ccap-9403ca16ea1c11b9.lock for C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+71 silly install write writing ccap 0.6.10 to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+72 verbose unbuild node_modules\ccap
+73 silly gentlyRm C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap is being purged from base C:\Users\jialao\Desktop\HJL-Blog
+74 verbose gentlyRm don't care about contents; nuking C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+75 verbose tar unpack C:\Users\jialao\AppData\Roaming\npm-cache\ccap\0.6.10\package.tgz
+76 verbose tar unpacking to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+77 silly gentlyRm C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap is being purged
+78 verbose gentlyRm don't care about contents; nuking C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+79 silly gunzTarPerm modes [ '777', '666' ]
+80 silly gunzTarPerm extractEntry package.json
+81 silly gunzTarPerm extractEntry .npmignore
+82 silly gunzTarPerm extractEntry index.js
+83 silly gunzTarPerm extractEntry make.js
+84 silly gunzTarPerm extractEntry example/custom_get.js
+85 silly gunzTarPerm extractEntry example/custom_get2.js
+86 silly gunzTarPerm extractEntry example/default_get.js
+87 silly gunzTarPerm extractEntry example/web_example.js
+88 silly gunzTarPerm extractEntry binding.gyp
+89 silly gunzTarPerm extractEntry .travis.yml
+90 silly gunzTarPerm extractEntry lib/dir.js
+91 silly gunzTarPerm extractEntry lib/gen.js
+92 silly gunzTarPerm extractEntry lib/hcap.js
+93 silly gunzTarPerm extractEntry lib/timer.js
+94 silly gunzTarPerm extractEntry addon/cap.cc
+95 silly gunzTarPerm extractEntry addon/cap.h
+96 silly gunzTarPerm extractEntry addon/hcaptha.cc
+97 silly gunzTarPerm extractEntry addon/jpeglib/jddctmgr.c
+98 silly gunzTarPerm extractEntry addon/jpeglib/CImg.h
+99 silly gunzTarPerm extractEntry addon/jpeglib/Licence_CeCILL_V2-en.txt
+100 silly gunzTarPerm extractEntry addon/jpeglib/README.txt
+101 silly gunzTarPerm extractEntry addon/jpeglib/cderror.h
+102 silly gunzTarPerm extractEntry addon/jpeglib/cdjpeg.h
+103 silly gunzTarPerm extractEntry addon/jpeglib/jaricom.c
+104 silly gunzTarPerm extractEntry addon/jpeglib/jcapimin.c
+105 silly gunzTarPerm extractEntry addon/jpeglib/jcapistd.c
+106 silly gunzTarPerm extractEntry addon/jpeglib/jcarith.c
+107 silly gunzTarPerm extractEntry addon/jpeglib/jccoefct.c
+108 silly gunzTarPerm extractEntry addon/jpeglib/jccolor.c
+109 silly gunzTarPerm extractEntry addon/jpeglib/jcdctmgr.c
+110 silly gunzTarPerm extractEntry addon/jpeglib/jchuff.c
+111 silly gunzTarPerm extractEntry addon/jpeglib/jcinit.c
+112 silly gunzTarPerm extractEntry addon/jpeglib/jcmainct.c
+113 silly gunzTarPerm extractEntry addon/jpeglib/jcmarker.c
+114 silly gunzTarPerm extractEntry addon/jpeglib/jcmaster.c
+115 silly gunzTarPerm extractEntry addon/jpeglib/jcomapi.c
+116 silly gunzTarPerm extractEntry addon/jpeglib/jconfig.h
+117 silly gunzTarPerm extractEntry addon/jpeglib/jcparam.c
+118 silly gunzTarPerm extractEntry addon/jpeglib/jcprepct.c
+119 silly gunzTarPerm extractEntry addon/jpeglib/jcsample.c
+120 silly gunzTarPerm extractEntry addon/jpeglib/jctrans.c
+121 silly gunzTarPerm extractEntry addon/jpeglib/jdapimin.c
+122 silly gunzTarPerm extractEntry addon/jpeglib/jdapistd.c
+123 silly gunzTarPerm extractEntry addon/jpeglib/jdarith.c
+124 silly gunzTarPerm extractEntry addon/jpeglib/jdatadst.c
+125 silly gunzTarPerm extractEntry addon/jpeglib/jdatasrc.c
+126 silly gunzTarPerm extractEntry addon/jpeglib/jdcoefct.c
+127 silly gunzTarPerm extractEntry addon/jpeglib/jdcolor.c
+128 silly gunzTarPerm extractEntry addon/jpeglib/jdct.h
+129 silly gunzTarPerm extractEntry addon/jpeglib/Licence_CeCILL-C_V1-en.txt
+130 silly gunzTarPerm extractEntry addon/jpeglib/jdhuff.c
+131 silly gunzTarPerm extractEntry addon/jpeglib/jdinput.c
+132 silly gunzTarPerm extractEntry addon/jpeglib/jdmainct.c
+133 silly gunzTarPerm extractEntry addon/jpeglib/jdmarker.c
+134 silly gunzTarPerm extractEntry addon/jpeglib/jdmaster.c
+135 silly gunzTarPerm extractEntry addon/jpeglib/jdmerge.c
+136 silly gunzTarPerm extractEntry addon/jpeglib/jdpostct.c
+137 silly gunzTarPerm extractEntry addon/jpeglib/jdsample.c
+138 silly gunzTarPerm extractEntry addon/jpeglib/jdtrans.c
+139 silly gunzTarPerm extractEntry addon/jpeglib/jerror.c
+140 silly gunzTarPerm extractEntry addon/jpeglib/jerror.h
+141 silly gunzTarPerm extractEntry addon/jpeglib/jfdctflt.c
+142 silly gunzTarPerm extractEntry addon/jpeglib/jfdctfst.c
+143 silly gunzTarPerm extractEntry addon/jpeglib/jfdctint.c
+144 silly gunzTarPerm extractEntry addon/jpeglib/jidctflt.c
+145 silly gunzTarPerm extractEntry addon/jpeglib/jidctfst.c
+146 silly gunzTarPerm extractEntry addon/jpeglib/jidctint.c
+147 silly gunzTarPerm extractEntry addon/jpeglib/jinclude.h
+148 silly gunzTarPerm extractEntry addon/jpeglib/jmemmgr.c
+149 silly gunzTarPerm extractEntry addon/jpeglib/jmemnobs.c
+150 silly gunzTarPerm extractEntry addon/jpeglib/jmemsys.h
+151 silly gunzTarPerm extractEntry addon/jpeglib/jmorecfg.h
+152 silly gunzTarPerm extractEntry addon/jpeglib/jpegint.h
+153 silly gunzTarPerm extractEntry addon/jpeglib/jpeglib.h
+154 silly gunzTarPerm extractEntry addon/jpeglib/jquant1.c
+155 silly gunzTarPerm extractEntry addon/jpeglib/jquant2.c
+156 silly gunzTarPerm extractEntry addon/jpeglib/jutils.c
+157 silly gunzTarPerm extractEntry addon/jpeglib/jversion.h
+158 silly gunzTarPerm extractEntry addon/jpeglib/libjpeg.so
+159 silly gunzTarPerm extractEntry addon/jpeglib/plugins/jpeg_buffer.h
+160 silly gunzTarPerm extractEntry addon/jpeglib/plugins/add_fileformat.h
+161 silly gunzTarPerm extractEntry addon/jpeglib/plugins/cimg_ipl.h
+162 silly gunzTarPerm extractEntry addon/jpeglib/plugins/cimgmatlab.h
+163 silly gunzTarPerm extractEntry addon/jpeglib/plugins/draw_gradient.h
+164 silly gunzTarPerm extractEntry addon/jpeglib/plugins/cimgIPL.h
+165 silly gunzTarPerm extractEntry addon/jpeglib/plugins/loop_macros.h
+166 silly gunzTarPerm extractEntry addon/jpeglib/plugins/nlmeans.h
+167 silly gunzTarPerm extractEntry addon/jpeglib/plugins/skeleton.h
+168 silly gunzTarPerm extractEntry addon/jpeglib/plugins/vrml.h
+169 silly gunzTarPerm extractEntry addon/jpeglib/plugins/vtk.h
+170 silly gunzTarPerm extractEntry addon/jpeglib/resources/compile_win_icl.bat
+171 silly gunzTarPerm extractEntry addon/jpeglib/resources/compile_win_visualcpp.bat
+172 silly gunzTarPerm extractEntry addon/jpeglib/transupp.h
+173 silly gunzTarPerm extractEntry addon/libjpeg.dll
+174 silly gunzTarPerm extractEntry benchmark/generate.js
+175 silly gunzTarPerm extractEntry readme.md
+176 silly gunzTarPerm extractEntry test/main_test.js
+177 verbose write writing to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\package.json
+178 info preinstall ccap@0.6.10
+179 verbose unsafe-perm in lifecycle true
+180 verbose readDependencies loading dependencies from C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\package.json
+181 silly prepareForInstallMany adding async@1.4.2 from ccap dependencies
+182 silly prepareForInstallMany adding node-schedule@0.1.13 from ccap dependencies
+183 silly prepareForInstallMany adding nan@1.7.0 from ccap dependencies
+184 verbose readDependencies loading dependencies from C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\package.json
+185 silly cache add args [ 'async@1.4.2', null ]
+186 verbose cache add spec async@1.4.2
+187 silly cache add args [ 'node-schedule@0.1.13', null ]
+188 verbose cache add spec node-schedule@0.1.13
+189 silly cache add parsed spec Result {
+189 silly cache add   raw: 'async@1.4.2',
+189 silly cache add   scope: null,
+189 silly cache add   name: 'async',
+189 silly cache add   rawSpec: '1.4.2',
+189 silly cache add   spec: '1.4.2',
+189 silly cache add   type: 'version' }
+190 silly addNamed async@1.4.2
+191 verbose addNamed "1.4.2" is a plain semver version for async
+192 silly mapToRegistry name async
+193 silly mapToRegistry using default registry
+194 silly mapToRegistry registry https://registry.npmjs.org/
+195 silly mapToRegistry uri https://registry.npmjs.org/async
+196 verbose addNameVersion registry:https://registry.npmjs.org/async not in flight; fetching
+197 silly cache add parsed spec Result {
+197 silly cache add   raw: 'node-schedule@0.1.13',
+197 silly cache add   scope: null,
+197 silly cache add   name: 'node-schedule',
+197 silly cache add   rawSpec: '0.1.13',
+197 silly cache add   spec: '0.1.13',
+197 silly cache add   type: 'version' }
+198 silly addNamed node-schedule@0.1.13
+199 verbose addNamed "0.1.13" is a plain semver version for node-schedule
+200 silly mapToRegistry name node-schedule
+201 silly mapToRegistry using default registry
+202 silly mapToRegistry registry https://registry.npmjs.org/
+203 silly mapToRegistry uri https://registry.npmjs.org/node-schedule
+204 verbose addNameVersion registry:https://registry.npmjs.org/node-schedule not in flight; fetching
+205 silly cache add args [ 'nan@1.7.0', null ]
+206 verbose cache add spec nan@1.7.0
+207 silly cache add parsed spec Result {
+207 silly cache add   raw: 'nan@1.7.0',
+207 silly cache add   scope: null,
+207 silly cache add   name: 'nan',
+207 silly cache add   rawSpec: '1.7.0',
+207 silly cache add   spec: '1.7.0',
+207 silly cache add   type: 'version' }
+208 silly addNamed nan@1.7.0
+209 verbose addNamed "1.7.0" is a plain semver version for nan
+210 silly mapToRegistry name nan
+211 silly mapToRegistry using default registry
+212 silly mapToRegistry registry https://registry.npmjs.org/
+213 silly mapToRegistry uri https://registry.npmjs.org/nan
+214 verbose addNameVersion registry:https://registry.npmjs.org/nan not in flight; fetching
+215 verbose request uri https://registry.npmjs.org/async
+216 verbose request no auth needed
+217 info attempt registry request try #1 at 11:47:28
+218 verbose etag "ICGH8E1GFAVTDKKJCTCIAHXB"
+219 http request GET https://registry.npmjs.org/async
+220 verbose request uri https://registry.npmjs.org/node-schedule
+221 verbose request no auth needed
+222 info attempt registry request try #1 at 11:47:28
+223 verbose etag "AUQFWB87W3975VYHDB7SO5Q1R"
+224 http request GET https://registry.npmjs.org/node-schedule
+225 verbose request uri https://registry.npmjs.org/nan
+226 verbose request no auth needed
+227 info attempt registry request try #1 at 11:47:28
+228 verbose etag "2WWW5AX964V0PZW60K7QH8WU7"
+229 http request GET https://registry.npmjs.org/nan
+230 http 304 https://registry.npmjs.org/async
+231 verbose headers { date: 'Tue, 12 Jul 2016 03:47:29 GMT',
+231 verbose headers   via: '1.1 varnish',
+231 verbose headers   'cache-control': 'max-age=300',
+231 verbose headers   etag: '"ICGH8E1GFAVTDKKJCTCIAHXB"',
+231 verbose headers   age: '138',
+231 verbose headers   connection: 'keep-alive',
+231 verbose headers   'x-served-by': 'cache-lcy1128-LCY',
+231 verbose headers   'x-cache': 'HIT',
+231 verbose headers   'x-cache-hits': '12',
+231 verbose headers   'x-timer': 'S1468295249.975628,VS0,VE0',
+231 verbose headers   vary: 'Accept-Encoding' }
+232 silly get cb [ 304,
+232 silly get   { date: 'Tue, 12 Jul 2016 03:47:29 GMT',
+232 silly get     via: '1.1 varnish',
+232 silly get     'cache-control': 'max-age=300',
+232 silly get     etag: '"ICGH8E1GFAVTDKKJCTCIAHXB"',
+232 silly get     age: '138',
+232 silly get     connection: 'keep-alive',
+232 silly get     'x-served-by': 'cache-lcy1128-LCY',
+232 silly get     'x-cache': 'HIT',
+232 silly get     'x-cache-hits': '12',
+232 silly get     'x-timer': 'S1468295249.975628,VS0,VE0',
+232 silly get     vary: 'Accept-Encoding' } ]
+233 verbose etag https://registry.npmjs.org/async from cache
+234 verbose get saving async to C:\Users\jialao\AppData\Roaming\npm-cache\registry.npmjs.org\async\.cache.json
+235 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+236 http 304 https://registry.npmjs.org/node-schedule
+237 verbose headers { date: 'Tue, 12 Jul 2016 03:47:29 GMT',
+237 verbose headers   via: '1.1 varnish',
+237 verbose headers   'cache-control': 'max-age=300',
+237 verbose headers   etag: '"AUQFWB87W3975VYHDB7SO5Q1R"',
+237 verbose headers   age: '151',
+237 verbose headers   connection: 'keep-alive',
+237 verbose headers   'x-served-by': 'cache-lcy1120-LCY',
+237 verbose headers   'x-cache': 'HIT',
+237 verbose headers   'x-cache-hits': '2',
+237 verbose headers   'x-timer': 'S1468295249.975920,VS0,VE0',
+237 verbose headers   vary: 'Accept-Encoding' }
+238 silly get cb [ 304,
+238 silly get   { date: 'Tue, 12 Jul 2016 03:47:29 GMT',
+238 silly get     via: '1.1 varnish',
+238 silly get     'cache-control': 'max-age=300',
+238 silly get     etag: '"AUQFWB87W3975VYHDB7SO5Q1R"',
+238 silly get     age: '151',
+238 silly get     connection: 'keep-alive',
+238 silly get     'x-served-by': 'cache-lcy1120-LCY',
+238 silly get     'x-cache': 'HIT',
+238 silly get     'x-cache-hits': '2',
+238 silly get     'x-timer': 'S1468295249.975920,VS0,VE0',
+238 silly get     vary: 'Accept-Encoding' } ]
+239 verbose etag https://registry.npmjs.org/node-schedule from cache
+240 verbose get saving node-schedule to C:\Users\jialao\AppData\Roaming\npm-cache\registry.npmjs.org\node-schedule\.cache.json
+241 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+242 silly cache afterAdd async@1.4.2
+243 verbose afterAdd C:\Users\jialao\AppData\Roaming\npm-cache\async\1.4.2\package\package.json not in flight; writing
+244 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+245 verbose afterAdd C:\Users\jialao\AppData\Roaming\npm-cache\async\1.4.2\package\package.json written
+246 silly cache afterAdd node-schedule@0.1.13
+247 verbose afterAdd C:\Users\jialao\AppData\Roaming\npm-cache\node-schedule\0.1.13\package\package.json not in flight; writing
+248 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+249 verbose afterAdd C:\Users\jialao\AppData\Roaming\npm-cache\node-schedule\0.1.13\package\package.json written
+250 http 200 https://registry.npmjs.org/nan
+251 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+251 verbose headers   etag: '"2POVJEDCD6LOO0Y53S1HJ4UMJ"',
+251 verbose headers   'content-type': 'application/json',
+251 verbose headers   'content-encoding': 'gzip',
+251 verbose headers   'cache-control': 'max-age=300',
+251 verbose headers   'content-length': '17111',
+251 verbose headers   'accept-ranges': 'bytes',
+251 verbose headers   date: 'Tue, 12 Jul 2016 03:47:29 GMT',
+251 verbose headers   via: '1.1 varnish',
+251 verbose headers   age: '114',
+251 verbose headers   connection: 'keep-alive',
+251 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
+251 verbose headers   'x-cache': 'HIT',
+251 verbose headers   'x-cache-hits': '4',
+251 verbose headers   'x-timer': 'S1468295249.977361,VS0,VE0',
+251 verbose headers   vary: 'Accept-Encoding' }
+252 silly get cb [ 200,
+252 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+252 silly get     etag: '"2POVJEDCD6LOO0Y53S1HJ4UMJ"',
+252 silly get     'content-type': 'application/json',
+252 silly get     'content-encoding': 'gzip',
+252 silly get     'cache-control': 'max-age=300',
+252 silly get     'content-length': '17111',
+252 silly get     'accept-ranges': 'bytes',
+252 silly get     date: 'Tue, 12 Jul 2016 03:47:29 GMT',
+252 silly get     via: '1.1 varnish',
+252 silly get     age: '114',
+252 silly get     connection: 'keep-alive',
+252 silly get     'x-served-by': 'cache-lcy1133-LCY',
+252 silly get     'x-cache': 'HIT',
+252 silly get     'x-cache-hits': '4',
+252 silly get     'x-timer': 'S1468295249.977361,VS0,VE0',
+252 silly get     vary: 'Accept-Encoding' } ]
+253 verbose get saving nan to C:\Users\jialao\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+254 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+255 silly mapToRegistry name nan
+256 silly mapToRegistry using default registry
+257 silly mapToRegistry registry https://registry.npmjs.org/
+258 silly mapToRegistry uri https://registry.npmjs.org/nan
+259 verbose addRemoteTarball https://registry.npmjs.org/nan/-/nan-1.7.0.tgz not in flight; adding
+260 verbose addRemoteTarball [ 'https://registry.npmjs.org/nan/-/nan-1.7.0.tgz',
+260 verbose addRemoteTarball   '755b997404e83cbe7bc08bc3c5c56291bce87438' ]
+261 info retry fetch attempt 1 at 11:47:30
+262 info attempt registry request try #1 at 11:47:30
+263 http fetch GET https://registry.npmjs.org/nan/-/nan-1.7.0.tgz
+264 http fetch 200 https://registry.npmjs.org/nan/-/nan-1.7.0.tgz
+265 silly fetchAndShaCheck shasum 755b997404e83cbe7bc08bc3c5c56291bce87438
+266 verbose addTmpTarball C:\Users\jialao\AppData\Local\Temp\npm-6568-9e434d57\registry.npmjs.org\nan\-\nan-1.7.0.tgz not in flight; adding
+267 verbose addTmpTarball already have metadata; skipping unpack for nan@1.7.0
+268 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+269 silly cache afterAdd nan@1.7.0
+270 verbose afterAdd C:\Users\jialao\AppData\Roaming\npm-cache\nan\1.7.0\package\package.json not in flight; writing
+271 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+272 verbose afterAdd C:\Users\jialao\AppData\Roaming\npm-cache\nan\1.7.0\package\package.json written
+273 silly install resolved [ { name: 'async',
+273 silly install resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+273 silly install resolved     main: 'lib/async.js',
+273 silly install resolved     files: [ 'lib' ],
+273 silly install resolved     author: { name: 'Caolan McMahon' },
+273 silly install resolved     version: '1.4.2',
+273 silly install resolved     keywords: [ 'async', 'callback', 'utility', 'module' ],
+273 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/caolan/async.git' },
+273 silly install resolved     bugs: { url: 'https://github.com/caolan/async/issues' },
+273 silly install resolved     license: 'MIT',
+273 silly install resolved     devDependencies:
+273 silly install resolved      { benchmark: 'github:bestiejs/benchmark.js',
+273 silly install resolved        bluebird: '^2.9.32',
+273 silly install resolved        chai: '^3.1.0',
+273 silly install resolved        coveralls: '^2.11.2',
+273 silly install resolved        'es6-promise': '^2.3.0',
+273 silly install resolved        jscs: '^1.13.1',
+273 silly install resolved        jshint: '~2.8.0',
+273 silly install resolved        karma: '^0.13.2',
+273 silly install resolved        'karma-browserify': '^4.2.1',
+273 silly install resolved        'karma-firefox-launcher': '^0.1.6',
+273 silly install resolved        'karma-mocha': '^0.2.0',
+273 silly install resolved        'karma-mocha-reporter': '^1.0.2',
+273 silly install resolved        lodash: '^3.9.0',
+273 silly install resolved        mkdirp: '~0.5.1',
+273 silly install resolved        mocha: '^2.2.5',
+273 silly install resolved        'native-promise-only': '^0.8.0-a',
+273 silly install resolved        nodeunit: '>0.0.0',
+273 silly install resolved        nyc: '^2.1.0',
+273 silly install resolved        rsvp: '^3.0.18',
+273 silly install resolved        'uglify-js': '~2.4.0',
+273 silly install resolved        xyz: '^0.5.0',
+273 silly install resolved        yargs: '~3.9.1' },
+273 silly install resolved     jam: { main: 'lib/async.js', include: [Object], categories: [Object] },
+273 silly install resolved     scripts:
+273 silly install resolved      { 'mocha-node-test': 'mocha mocha_test/',
+273 silly install resolved        'mocha-browser-test': 'karma start',
+273 silly install resolved        'mocha-test': 'npm run mocha-node-test && npm run mocha-browser-test',
+273 silly install resolved        'nodeunit-test': 'nodeunit test/test-async.js',
+273 silly install resolved        test: 'npm run-script lint && npm run nodeunit-test && npm run mocha-test',
+273 silly install resolved        lint: 'jshint lib/*.js test/*.js perf/*.js && jscs lib/*.js test/*.js perf/*.js',
+273 silly install resolved        coverage: 'nyc npm test && nyc report',
+273 silly install resolved        coveralls: 'nyc npm test && nyc report --reporter=text-lcov | coveralls' },
+273 silly install resolved     spm: { main: 'lib/async.js' },
+273 silly install resolved     volo: { main: 'lib/async.js', ignore: [Object] },
+273 silly install resolved     gitHead: '92f78aebad222d60c13e4299c0e723f2fe2d6611',
+273 silly install resolved     homepage: 'https://github.com/caolan/async#readme',
+273 silly install resolved     _id: 'async@1.4.2',
+273 silly install resolved     _shasum: '6c9edcb11ced4f0dd2f2d40db0d49a109c088aab',
+273 silly install resolved     _from: 'async@1.4.2',
+273 silly install resolved     _npmVersion: '2.9.0',
+273 silly install resolved     _nodeVersion: '2.0.1',
+273 silly install resolved     _npmUser: { name: 'megawac', email: 'megawac@gmail.com' },
+273 silly install resolved     dist:
+273 silly install resolved      { shasum: '6c9edcb11ced4f0dd2f2d40db0d49a109c088aab',
+273 silly install resolved        tarball: 'https://registry.npmjs.org/async/-/async-1.4.2.tgz' },
+273 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+273 silly install resolved     directories: {},
+273 silly install resolved     _resolved: 'https://registry.npmjs.org/async/-/async-1.4.2.tgz',
+273 silly install resolved     readme: 'ERROR: No README data found!' },
+273 silly install resolved   { name: 'node-schedule',
+273 silly install resolved     version: '0.1.13',
+273 silly install resolved     description: 'A cron-like and not-cron-like job scheduler for Node.',
+273 silly install resolved     keywords: [ 'schedule', 'task', 'job', 'cron' ],
+273 silly install resolved     author:
+273 silly install resolved      { name: 'Matt Patenaude',
+273 silly install resolved        email: 'matt@mattpatenaude.com',
+273 silly install resolved        url: 'http://mattpatenaude.com' },
+273 silly install resolved     main: './lib/schedule.js',
+273 silly install resolved     scripts: { test: 'nodeunit test' },
+273 silly install resolved     repository:
+273 silly install resolved      { type: 'git',
+273 silly install resolved        url: 'git+https://github.com/mattpat/node-schedule.git' },
+273 silly install resolved     devDependencies: { nodeunit: '~0.8.1' },
+273 silly install resolved     bugs: { url: 'https://github.com/mattpat/node-schedule/issues' },
+273 silly install resolved     _id: 'node-schedule@0.1.13',
+273 silly install resolved     dist:
+273 silly install resolved      { shasum: '6370ce11c87ff13dfc2c4163e393872ec2a8ee80',
+273 silly install resolved        tarball: 'https://registry.npmjs.org/node-schedule/-/node-schedule-0.1.13.tgz' },
+273 silly install resolved     _from: 'node-schedule@0.1.13',
+273 silly install resolved     _npmVersion: '1.3.11',
+273 silly install resolved     _npmUser: { name: 'mattpat', email: 'matt@mattpatenaude.com' },
+273 silly install resolved     maintainers: [ [Object] ],
+273 silly install resolved     directories: {},
+273 silly install resolved     _shasum: '6370ce11c87ff13dfc2c4163e393872ec2a8ee80',
+273 silly install resolved     _resolved: 'https://registry.npmjs.org/node-schedule/-/node-schedule-0.1.13.tgz',
+273 silly install resolved     readme: 'ERROR: No README data found!',
+273 silly install resolved     homepage: 'https://github.com/mattpat/node-schedule#readme' },
+273 silly install resolved   { name: 'nan',
+273 silly install resolved     version: '1.7.0',
+273 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8->0.12 compatibility',
+273 silly install resolved     main: 'include_dirs.js',
+273 silly install resolved     repository: { type: 'git', url: 'git://github.com/rvagg/nan.git' },
+273 silly install resolved     scripts:
+273 silly install resolved      { test: 'tap --gc test/js/*-test.js',
+273 silly install resolved        'rebuild-tests': 'pangyp rebuild --directory test' },
+273 silly install resolved     contributors:
+273 silly install resolved      [ [Object],
+273 silly install resolved        [Object],
+273 silly install resolved        [Object],
+273 silly install resolved        [Object],
+273 silly install resolved        [Object],
+273 silly install resolved        [Object],
+273 silly install resolved        [Object] ],
+273 silly install resolved     devDependencies:
+273 silly install resolved      { bindings: '~1.2.1',
+273 silly install resolved        'node-gyp': '~1.0.2',
+273 silly install resolved        pangyp: '~2.0.1',
+273 silly install resolved        tap: '~0.5.0',
+273 silly install resolved        xtend: '~4.0.0' },
+273 silly install resolved     license: 'MIT',
+273 silly install resolved     gitHead: '550efb5dde5cb6bf79db87ab48dce850e56e971a',
+273 silly install resolved     bugs: { url: 'https://github.com/rvagg/nan/issues' },
+273 silly install resolved     homepage: 'https://github.com/rvagg/nan',
+273 silly install resolved     _id: 'nan@1.7.0',
+273 silly install resolved     _shasum: '755b997404e83cbe7bc08bc3c5c56291bce87438',
+273 silly install resolved     _from: 'nan@1.7.0',
+273 silly install resolved     _npmVersion: '2.5.1',
+273 silly install resolved     _nodeVersion: '0.12.0',
+273 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+273 silly install resolved     maintainers: [ [Object], [Object] ],
+273 silly install resolved     dist:
+273 silly install resolved      { shasum: '755b997404e83cbe7bc08bc3c5c56291bce87438',
+273 silly install resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-1.7.0.tgz' },
+273 silly install resolved     directories: {},
+273 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-1.7.0.tgz' } ]
+274 info install async@1.4.2 into C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+275 info install node-schedule@0.1.13 into C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+276 info install nan@1.7.0 into C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+277 info installOne async@1.4.2
+278 verbose installOne of async to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap not in flight; installing
+279 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+280 info installOne node-schedule@0.1.13
+281 verbose installOne of node-schedule to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap not in flight; installing
+282 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+283 info installOne nan@1.7.0
+284 verbose installOne of nan to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap not in flight; installing
+285 verbose correctMkdir C:\Users\jialao\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+286 verbose lock using C:\Users\jialao\AppData\Roaming\npm-cache\_locks\async-69b68c30e130c18b.lock for C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async
+287 verbose lock using C:\Users\jialao\AppData\Roaming\npm-cache\_locks\node-schedule-6915699c7e1eed02.lock for C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule
+288 silly install write writing async 1.4.2 to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async
+289 verbose lock using C:\Users\jialao\AppData\Roaming\npm-cache\_locks\nan-0af9a0c135b4bcc4.lock for C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan
+290 silly install write writing node-schedule 0.1.13 to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule
+291 silly install write writing nan 1.7.0 to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan
+292 verbose unbuild node_modules\ccap\node_modules\async
+293 verbose unbuild node_modules\ccap\node_modules\node-schedule
+294 silly gentlyRm C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async is being purged from base C:\Users\jialao\Desktop\HJL-Blog
+295 verbose gentlyRm don't care about contents; nuking C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async
+296 verbose unbuild node_modules\ccap\node_modules\nan
+297 verbose tar unpack C:\Users\jialao\AppData\Roaming\npm-cache\async\1.4.2\package.tgz
+298 verbose tar unpacking to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async
+299 silly gentlyRm C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async is being purged
+300 verbose gentlyRm don't care about contents; nuking C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async
+301 silly gentlyRm C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule is being purged from base C:\Users\jialao\Desktop\HJL-Blog
+302 verbose gentlyRm don't care about contents; nuking C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule
+303 silly gunzTarPerm modes [ '777', '666' ]
+304 verbose tar unpack C:\Users\jialao\AppData\Roaming\npm-cache\node-schedule\0.1.13\package.tgz
+305 verbose tar unpacking to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule
+306 silly gentlyRm C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule is being purged
+307 verbose gentlyRm don't care about contents; nuking C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule
+308 silly gentlyRm C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan is being purged from base C:\Users\jialao\Desktop\HJL-Blog
+309 verbose gentlyRm don't care about contents; nuking C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan
+310 silly gunzTarPerm modes [ '777', '666' ]
+311 verbose tar unpack C:\Users\jialao\AppData\Roaming\npm-cache\nan\1.7.0\package.tgz
+312 verbose tar unpacking to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan
+313 silly gentlyRm C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan is being purged
+314 verbose gentlyRm don't care about contents; nuking C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan
+315 silly gunzTarPerm modes [ '777', '666' ]
+316 silly gunzTarPerm extractEntry package.json
+317 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+318 silly gunzTarPerm extractEntry package.json
+319 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+320 silly gunzTarPerm extractEntry LICENSE
+321 silly gunzTarPerm modified mode [ 'LICENSE', 420, 438 ]
+322 silly gunzTarPerm extractEntry CHANGELOG.md
+323 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 438 ]
+324 silly gunzTarPerm extractEntry include_dirs.js
+325 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+326 silly gunzTarPerm extractEntry LICENSE.md
+327 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+328 silly gunzTarPerm extractEntry package.json
+329 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+330 silly gunzTarPerm extractEntry .npmignore
+331 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+332 silly gunzTarPerm extractEntry README.md
+333 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+334 silly gunzTarPerm extractEntry lib/increment.js
+335 silly gunzTarPerm modified mode [ 'lib/increment.js', 420, 438 ]
+336 silly gunzTarPerm extractEntry lib/schedule.js
+337 silly gunzTarPerm modified mode [ 'lib/schedule.js', 420, 438 ]
+338 silly gunzTarPerm extractEntry test/convenience-method-test.js
+339 silly gunzTarPerm modified mode [ 'test/convenience-method-test.js', 420, 438 ]
+340 silly gunzTarPerm extractEntry lib/async.js
+341 silly gunzTarPerm modified mode [ 'lib/async.js', 420, 438 ]
+342 silly gunzTarPerm extractEntry .dntrc
+343 silly gunzTarPerm modified mode [ '.dntrc', 436, 438 ]
+344 silly gunzTarPerm extractEntry appveyor.yml
+345 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 438 ]
+346 silly gunzTarPerm extractEntry nan.h
+347 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+348 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+349 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+350 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+351 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+352 silly gunzTarPerm extractEntry nan_new.h
+353 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+354 silly gunzTarPerm extractEntry nan_string_bytes.h
+355 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+356 silly gunzTarPerm extractEntry CHANGELOG.md
+357 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+358 silly gunzTarPerm extractEntry test/date-convenience-methods-test.js
+359 silly gunzTarPerm modified mode [ 'test/date-convenience-methods-test.js', 420, 438 ]
+360 silly gunzTarPerm extractEntry test/job-test.js
+361 silly gunzTarPerm modified mode [ 'test/job-test.js', 420, 438 ]
+362 silly gunzTarPerm extractEntry test/range-test.js
+363 silly gunzTarPerm modified mode [ 'test/range-test.js', 420, 438 ]
+364 silly gunzTarPerm extractEntry test/recurrence-rule-test.js
+365 silly gunzTarPerm modified mode [ 'test/recurrence-rule-test.js', 420, 438 ]
+366 verbose write writing to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async\package.json
+367 info preinstall async@1.4.2
+368 verbose readDependencies loading dependencies from C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async\package.json
+369 verbose readDependencies loading dependencies from C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async\package.json
+370 silly install resolved []
+371 verbose about to build C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async
+372 info build C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async
+373 info linkStuff async@1.4.2
+374 silly linkStuff async@1.4.2 has C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules as its parent node_modules
+375 verbose linkBins async@1.4.2
+376 verbose linkMans async@1.4.2
+377 verbose rebuildBundles async@1.4.2
+378 info install async@1.4.2
+379 info postinstall async@1.4.2
+380 verbose unlock done using C:\Users\jialao\AppData\Roaming\npm-cache\_locks\async-69b68c30e130c18b.lock for C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\async
+381 verbose write writing to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule\package.json
+382 info preinstall node-schedule@0.1.13
+383 verbose readDependencies loading dependencies from C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule\package.json
+384 verbose readDependencies loading dependencies from C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule\package.json
+385 silly install resolved []
+386 verbose about to build C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule
+387 info build C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule
+388 info linkStuff node-schedule@0.1.13
+389 silly linkStuff node-schedule@0.1.13 has C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules as its parent node_modules
+390 verbose linkBins node-schedule@0.1.13
+391 verbose linkMans node-schedule@0.1.13
+392 verbose rebuildBundles node-schedule@0.1.13
+393 info install node-schedule@0.1.13
+394 info postinstall node-schedule@0.1.13
+395 verbose unlock done using C:\Users\jialao\AppData\Roaming\npm-cache\_locks\node-schedule-6915699c7e1eed02.lock for C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\node-schedule
+396 verbose write writing to C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan\package.json
+397 info preinstall nan@1.7.0
+398 verbose readDependencies loading dependencies from C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan\package.json
+399 verbose readDependencies loading dependencies from C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan\package.json
+400 silly install resolved []
+401 verbose about to build C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan
+402 info build C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan
+403 info linkStuff nan@1.7.0
+404 silly linkStuff nan@1.7.0 has C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules as its parent node_modules
+405 verbose linkBins nan@1.7.0
+406 verbose linkMans nan@1.7.0
+407 verbose rebuildBundles nan@1.7.0
+408 info install nan@1.7.0
+409 info postinstall nan@1.7.0
+410 verbose unlock done using C:\Users\jialao\AppData\Roaming\npm-cache\_locks\nan-0af9a0c135b4bcc4.lock for C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap\node_modules\nan
+411 verbose about to build C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+412 info build C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+413 info linkStuff ccap@0.6.10
+414 silly linkStuff ccap@0.6.10 has C:\Users\jialao\Desktop\HJL-Blog\node_modules as its parent node_modules
+415 verbose linkBins ccap@0.6.10
+416 verbose linkMans ccap@0.6.10
+417 verbose rebuildBundles ccap@0.6.10
+418 verbose rebuildBundles [ 'async', 'nan', 'node-schedule' ]
+419 info install ccap@0.6.10
+420 verbose unsafe-perm in lifecycle true
+421 info ccap@0.6.10 Failed to exec install script
+422 verbose unlock done using C:\Users\jialao\AppData\Roaming\npm-cache\_locks\ccap-9403ca16ea1c11b9.lock for C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+423 verbose stack Error: ccap@0.6.10 install: `node-gyp rebuild`
+423 verbose stack Exit status 1
+423 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:214:16)
+423 verbose stack     at emitTwo (events.js:87:13)
+423 verbose stack     at EventEmitter.emit (events.js:172:7)
+423 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+423 verbose stack     at emitTwo (events.js:87:13)
+423 verbose stack     at ChildProcess.emit (events.js:172:7)
+423 verbose stack     at maybeClose (internal/child_process.js:827:16)
+423 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+424 verbose pkgid ccap@0.6.10
+425 verbose cwd C:\Users\jialao\Desktop\HJL-Blog
+426 error Windows_NT 10.0.10586
+427 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "ccap" "--save"
+428 error node v4.4.1
+429 error npm  v2.14.20
+430 error code ELIFECYCLE
+431 error ccap@0.6.10 install: `node-gyp rebuild`
+431 error Exit status 1
+432 error Failed at the ccap@0.6.10 install script 'node-gyp rebuild'.
+432 error This is most likely a problem with the ccap package,
+432 error not with npm itself.
+432 error Tell the author that this fails on your system:
+432 error     node-gyp rebuild
+432 error You can get information on how to open an issue for this project with:
+432 error     npm bugs ccap
+432 error Or if that isn't available, you can get their info via:
+432 error
+432 error     npm owner ls ccap
+432 error There is likely additional logging output above.
+433 verbose exit [ 1, true ]
+434 verbose unbuild node_modules\ccap
+435 info preuninstall ccap@0.6.10
+436 info uninstall ccap@0.6.10
+437 verbose unbuild rmStuff ccap@0.6.10 from C:\Users\jialao\Desktop\HJL-Blog\node_modules
+438 info postuninstall ccap@0.6.10
+439 silly gentlyRm C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap is being purged from base C:\Users\jialao\Desktop\HJL-Blog
+440 verbose gentlyRm don't care about contents; nuking C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+441 silly vacuum-fs purging C:\Users\jialao\Desktop\HJL-Blog\node_modules\ccap
+442 silly vacuum-fs quitting because other entries in C:\Users\jialao\Desktop\HJL-Blog\node_modules
