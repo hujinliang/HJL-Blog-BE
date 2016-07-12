@@ -15,6 +15,9 @@ var all = {
             }
         }
     },
+    session:{
+        secrets:'hjl-zq'
+    },
     seedDB:true
     
     

@@ -24,8 +24,18 @@ if(config.seedDB){
     require('./config/seed')
 }
 
-
 var app = express()
+require('./config/express')(app);
+require('./routes')(app);
+
+if('development' === config.env){
+    app.use(errorHandler());
+}else{
+    app.use(function(err,req,res,next){
+        return res.status(500).send('error')
+    })
+}
+
 
 app.listen(config.port,function(){
     console.log('Listening on %d, in %s mode',config.port,app.get('env'))

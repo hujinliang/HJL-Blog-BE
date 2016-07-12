@@ -21,9 +21,23 @@ var UserSchema = new Schema({
         email        : String,
         name         : String
     },
+    likeList:[
+        {
+            type:Schema.Types.ObjectId,
+            ref:'Article'
+        }
+    ],
     hashedPassword:String,
     salt:String,
-    avatar:String
+    avatar:String,
+    role:{
+        type:String,
+        default:'user'
+    },
+    created:{
+        type:Date,
+        default:Date.now
+    }
 });
 
 UserSchema
@@ -33,10 +47,59 @@ UserSchema
         this.salt = this.makeSalt();
         this.hashedPassword = this.encryptPassword(password);
     }).get(function(){
-        return this._password;
-    })
+    return this._password;
+});
+
+UserSchema
+    .virtual('userInfo')
+    .get(function(){
+        return {
+            'nickname':this.nickname,
+            'role':this.role,
+            'email':this.email,
+            'avatar':this.avatar,
+            'likes':this.likeList,
+            'provider':this.provider
+        };
+    });
+
+UserSchema.virtual('providerInfo')
+    .get(function(){
+       return {
+           'qq':this.qq,
+           'github':this.github
+       } 
+    });
+
+UserSchema
+    .virtual('token')
+    .get(function(){
+        return {
+            '_id':this._id,
+            'role':this.role
+        };
+    });
+
+UserSchema
+    .path('nickname')
+    .validate(function(value,respond){
+       var self = this;
+        this.constructor.findOne({nickname:value},function(err,user){
+            if(err) throw err;
+            if(user){
+                if(self.id === user.id){
+                    return respond(false);
+                }
+                respond(true);
+            }
+        })
+    },'这个呢称已经被使用');
 
 UserSchema.methods = {
+    hasRole:function(role){
+      var selfRoles = this.role;
+        return (selfRoles.indexOf('admin')!==-1||selfRoles.indexOf(role)!==-1);
+    },
     makeSalt:function(){
         return crypto.randomBytes(16).toString('base64')
     },
@@ -50,7 +113,7 @@ UserSchema.methods = {
     authenticate:function(text){
         return this.encryptPassword(text)===this.hashedPassword;
     }
-    
+
 }
 
 UserSchema.set('toObject', { virtuals: true });
