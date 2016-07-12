@@ -1,0 +1,44 @@
+{
+  "name": "hjl-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HUJINLIANG/HJL-Blog.git"
+  },
+  "author": "hjl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HUJINLIANG/HJL-Blog/issues"
+  },
+  "homepage": "https://github.com/HUJINLIANG/HJL-Blog#readme",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "body-parser": "^1.15.2",
+    "bunyan": "^1.8.1",
+    "composable-middleware": "^0.3.0",
+    "compression": "^1.6.2",
+    "connect-redis": "^3.1.0",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.7.1",
+    "errorhandler": "^1.4.3",
+    "express": "^4.14.0",
+    "express-jwt": "^3.4.0",
+    "express-session": "^1.14.0",
+    "jsonwebtoken": "^7.0.1",
+    "lodash": "^4.13.1",
+    "markdown-it": "^7.0.0",
+    "moment": "^2.14.1",
+    "mongoose": "^4.5.3",
+    "multer": "^1.1.0",
+    "passport": "^0.3.2",
+    "passport-github": "^1.1.0",
+    "passport-local": "^1.0.0",
+    "passport-qq": "0.0.3",
+    "pm2": "^1.1.3"
+  }
+}
