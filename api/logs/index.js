@@ -3,10 +3,11 @@
  */
 var express = require('express');
 var auth = require('../../auth/auth.service');
-
+var controller = require('./logs.controller')
 
 var router = express.Router();
 
+router.get('/getLogsList',auth.hasRole('admin'),controller.getLogsList);
 
 
 

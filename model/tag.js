@@ -9,5 +9,20 @@ var TagSchema = new Schema({
        type:String,
        unique:true
    } ,
-    is_index
+    is_index:{
+    	type:Boolean,
+    	default:false
+    },
+    sort:{
+    	type:Number,
+    	default:1
+    }
 });
+
+var Tag = mongoose.model('Tag',TagSchema);
+
+var Promise = require('bluebird');
+Promise.promisifyAll(Tag);
+Promise.promisifyA;;(Tag.prototype);
+
+module.exports = Tag;

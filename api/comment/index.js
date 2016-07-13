@@ -3,11 +3,14 @@
  */
 var express = require('express');
 var auth = require('../../auth/auth.service');
+var controller = require('./comment.controller');
 
 
 var router = express.Router();
 
-
+router.post('/addNewComment',auth.isAuthenticated(),controller.addNewComment);
+router.get('/:id/getFrontCommentList',controller.getFrontCommentList);
+router.post('/:id/addNewReply',auth.isAuthenticated(),controller.addNewReply);
 
 
 module.exports = router;
