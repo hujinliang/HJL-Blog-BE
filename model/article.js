@@ -25,7 +25,7 @@ var ArticleSchema = new Schema({
 	comment_count:{
 		type:Number,
 		default:0
-	}
+	},
 	like_count:{
 		type:Number,
 		default:1
