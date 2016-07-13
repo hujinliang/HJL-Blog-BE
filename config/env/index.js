@@ -18,10 +18,10 @@ var all = {
     session:{
         secrets:'hjl-zq'
     },
-    seedDB:true
+    seedDB:true,
+    snsLogins:['github','qq']
     
-    
-}
+};
 
 var config = _.merge(all,require('./'+process.env.NODE_ENV+'.js')||{});
 

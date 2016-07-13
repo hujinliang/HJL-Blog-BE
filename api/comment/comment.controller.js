@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var Comment = mongoose.model('Comment');
 var Article = mongoose.model('Article');
 
-export.addNewComment = function(req,res,next){
+exports.addNewComment = function(req,res,next){
 	var aid = req.body.aid;
 	var content =req.body.content;
 	var userId = req.user._id;
@@ -11,7 +11,7 @@ export.addNewComment = function(req,res,next){
 	if(!aid){
 		error_msg = '缺少参数';
 	}else if(!content || content == ''){
-		error_msg = '内容不能为空'；
+		error_msg = '内容不能为空';
 	}
 	if(error_msg){
 		return res.status(422).send({
