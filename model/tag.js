@@ -23,6 +23,6 @@ var Tag = mongoose.model('Tag',TagSchema);
 
 var Promise = require('bluebird');
 Promise.promisifyAll(Tag);
-Promise.promisifyA;;(Tag.prototype);
+Promise.promisifyAll(Tag.prototype);
 
 module.exports = Tag;
