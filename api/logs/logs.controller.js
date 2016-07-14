@@ -4,10 +4,10 @@ var Logs = mongoose.model('Logs');
 
 exports.getLogsList = function(req,res,next){
 	var currentPage = (parseInt(req.query.currentPage)>0)?parseInt(req.query.currentPage):1;
-	var itemsPerPage = (parseInt(req.query.itemsPerPage)>0)>parseInt(req.query.itemsPerPage):10;
+	var itemsPerPage = (parseInt(req.query.itemsPerPage)>0)?parseInt(req.query.itemsPerPage):10;
 	var startRow = (currentPage - 1)*itemsPerPage;
 
-	var sortName = String(req.query.sortName):'created';
+	var sortName = String(req.query.sortName)||'created';
 	var sortOrder = req.query.sortOrder;
 
 	if(sortOrder === 'false'){

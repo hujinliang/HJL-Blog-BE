@@ -3,7 +3,7 @@ var mongoose = require('mongoose'),
 
 var LogSchema = new Schema({
 	uid:{
-		typee:Schema.Types.ObjectId,
+		type:Schema.Types.ObjectId,
 		ref:'User'
 	},
 	content:{

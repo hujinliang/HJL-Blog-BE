@@ -3,7 +3,7 @@
  */
 var express = require('express');
 var auth = require('../../auth/auth.service');
-var controller = require('./logs.controller')
+var controller = require('./logs.controller');
 
 var router = express.Router();
 

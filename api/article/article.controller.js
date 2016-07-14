@@ -7,11 +7,11 @@ var Article = mongoose.model('Article');
 var User = mongoose.model('User');
 var Comment = mongoose.model('Comment');
 var path = require('path');
-var URL = require('URL');
+// var URL = require('URL');
 var MarkdownIt = require('markdown-it');
 var config = require('../../config/env');
 var Promise = require('bluebird');
-var tools = require('../../util/tools');
+// var tools = require('../../util/tools');
 
 
 exports.getFrontArticleCount = function(req,res,next){

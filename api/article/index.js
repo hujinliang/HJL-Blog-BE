@@ -10,7 +10,7 @@ var upload = multer({dest:'upload/'});
 var router = express.Router();
 
 router.get('/getFrontArticleList',controller.getFrontArticleList);
-router.get('/getFrontArticleCount',controller.getFrontArticleConut);
+router.get('/getFrontArticleCount',controller.getFrontArticleCount);
 router.get('/:id/getFrontArticle',controller.getFrontArticle);
 
 router.get('/:id/getPrenext',controller.getPrenext);
