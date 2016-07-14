@@ -68,9 +68,9 @@ UserSchema.virtual('providerInfo')
        return {
            'qq':this.qq,
            'github':this.github
-       } 
+       }
     });
-
+//
 UserSchema
     .virtual('token')
     .get(function(){
@@ -88,13 +88,14 @@ UserSchema
             if(err) throw err;
             if(user){
                 if(self.id === user.id){
-                    return respond(false);
+                    return respond(true);
                 }
-                respond(true);
+                respond(false);
             }
+            respond(true)
         })
     },'这个呢称已经被使用');
-
+//
 UserSchema.methods = {
     hasRole:function(role){
       var selfRoles = this.role;

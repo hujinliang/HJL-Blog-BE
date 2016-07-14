@@ -7,18 +7,29 @@
 // if(process.env.NODE_ENV === 'development'){
 //     User.countAsync().then(function(count){
 //         if(count === 0){
-//             User.removeAsync().then(function(){
-//                 // console.log('1')
-//                 User.createAsync({
-//                     nickname:'admin',
+//             User.create({
+//                 nickname:'admin',
 //                     email:'admin@admin.com',
 //
-//                 },{
-//                     nickname:'test1',
+//             },{
+//                 nickname:'test1',
 //                     email:'aa@qq.com',
 //
-//                 })
 //             })
+//
+//
+//             // User.removeAsync().then(function(){
+//             //     // console.log('1')
+//             //     User.createAsync({
+//             //         nickname:'admin',
+//             //         email:'admin@admin.com',
+//             //
+//             //     },{
+//             //         nickname:'test1',
+//             //         email:'aa@qq.com',
+//             //
+//             //     })
+//             // })
 //         }
 //     })
 // }
@@ -78,6 +89,9 @@ if(process.env.NODE_ENV === 'development'){
                     name: 'react',
 
 
+                })
+                .then(function(){
+                    return Tag.findAsync()
                 })
                 .then(function (tags) {
                     return Article.removeAsync().then(function () {
