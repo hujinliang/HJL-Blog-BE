@@ -19,8 +19,12 @@ var all = {
         secrets:'hjl-zq'
     },
     seedDB:true,
-    snsLogins:['github','qq']
-    
+    snsLogins:['github','qq'],
+    qq:{
+        clientID:"clientID",
+        clientSecret:"clientSecret",
+        callbackURL:"/auth/qq/callback"
+    }
 };
 
 var config = _.merge(all,require('./'+process.env.NODE_ENV+'.js')||{});
