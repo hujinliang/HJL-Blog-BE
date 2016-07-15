@@ -98,6 +98,7 @@ if(process.env.NODE_ENV === 'development'){
                         return tags;
                     });
                 }).map(function (tag, index) {
+                console.log(index)
                 var indexOne = parseInt(index) + 1;
                 var indexTwo = parseInt(index) + 2;
                 Article.createAsync({
