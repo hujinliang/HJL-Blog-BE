@@ -21,8 +21,8 @@ var all = {
     seedDB:true,
     snsLogins:['qq'],
     qq:{
-        clientID:"clientID",
-        clientSecret:"clientSecret",
+        clientID:"101331657",
+        clientSecret:"f3fb9d389710d8cf3fccc498721dc0fe",
         callbackURL:"/auth/qq/callback"
     }
 };
