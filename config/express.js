@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var methoOverride = require('method-override');
 var cookieParser = require('cookie-parser');
-var pth = require('path');
+var path = require('path');
 var passport = require('passport');
 var session = require('express-session');
 var config = require('./env');
@@ -20,6 +20,9 @@ module.exports = function(app){
     var options = {
 
     };
+    
+    app.set('views',path.join(__dirname,'../views'));
+    app.set('view engine', 'ejs');
     app.use(cors(options));
     app.use(compression());
     app.use(bodyParser.urlencoded({extended:false}));

@@ -16,8 +16,8 @@ module.exports = function(app){
     
     app.use('./logs',require('./api/logs'));
     
-    app.use('*',function(req,res,next){
-        return res.json({status:'success',data:'HelloWorld'})
-    })
+    // app.use('/*',function(req,res,next){
+    //     return res.render('index')
+    // })
 
 }
