@@ -8,7 +8,7 @@ exports.setup = function(User,config){
     passport.use(new LocalStrategy({
         usernameField:'email',
         passwordField:'password'
-    }),function(email,password,done){
+    },function(email,password,done){
         User.findOne({email:email.toLowerCase()},function(err,user){
             if(err){
                 return done(err);
@@ -21,5 +21,5 @@ exports.setup = function(User,config){
             }
             return done(null,user);
         })
-    })
+    }))
 }

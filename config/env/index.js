@@ -19,7 +19,7 @@ var all = {
         secrets:'hjl-zq'
     },
     seedDB:true,
-    snsLogins:['github','qq'],
+    snsLogins:['qq'],
     qq:{
         clientID:"clientID",
         clientSecret:"clientSecret",

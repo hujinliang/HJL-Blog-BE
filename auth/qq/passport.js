@@ -3,10 +3,11 @@
  */
 var passport = require('passport');
 var qqStrategy = require('passport-qq').Strategy;
+var tools = require('../../util/tools');
 
 exports.setup = function(User,config){
     passport.use(new qqStrategy({
-            clientId:config.qq.clientID,
+            clientID:config.qq.clientID,
             clientSecret:config.qq.clientSecret,
             callbackURL:config.qq.callbackURL,
             passReqToCallback:true
@@ -38,13 +39,13 @@ exports.setup = function(User,config){
                                     newUser.nickname = tools.randomString();
                                 }
                                 user = new User(newUser);
-                                user.save(function(err){
+                                user.save(function(err,user){
                                     if(err) return done(err);
                                     done(null,user);
                                 })
                             })
                         }else{
-                            return done(err,user);
+                            return done(null,user);
                         }
                     }
                 )
