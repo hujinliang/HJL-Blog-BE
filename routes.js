@@ -15,9 +15,6 @@ module.exports = function(app){
     app.use('/comment',require('./api/comment'));
     
     app.use('/logs',require('./api/logs'));
-    
-    // app.use('/*',function(req,res,next){
-    //     return res.render('index')
-    // })
+
 
 }
