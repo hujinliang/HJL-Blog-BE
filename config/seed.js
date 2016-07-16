@@ -1,44 +1,12 @@
 /**
  * Created by jialao on 2016/7/12.
  */
-// var mongoose = require('mongoose');
-// var User = require('../model/user');
-//
-// if(process.env.NODE_ENV === 'development'){
-//     User.countAsync().then(function(count){
-//         if(count === 0){
-//             User.create({
-//                 nickname:'admin',
-//                     email:'admin@admin.com',
-//
-//             },{
-//                 nickname:'test1',
-//                     email:'aa@qq.com',
-//
-//             })
-//
-//
-//             // User.removeAsync().then(function(){
-//             //     // console.log('1')
-//             //     User.createAsync({
-//             //         nickname:'admin',
-//             //         email:'admin@admin.com',
-//             //
-//             //     },{
-//             //         nickname:'test1',
-//             //         email:'aa@qq.com',
-//             //
-//             //     })
-//             // })
-//         }
-//     })
-// }
-
 
 var mongoose = require('mongoose');
 var	User = mongoose.model('User');
 var	Article = mongoose.model('Article');
 var	Tag = mongoose.model('Tag');
+var Comment = mongoose.model('Comment');
 var Promise = require('bluebird');
 
 //初始化标签,文章,用户
@@ -47,10 +15,10 @@ var Promise = require('bluebird');
         if(count === 0){
             User.removeAsync().then(function () {
                 User.createAsync({
-                    nickname:'admin',
-                    email:'admin@admin.com',
+                    nickname:'HJL',
+                    email:'1617451312@qq.com',
                     role:'admin',
-                    password:'admin'
+                    password:'yq123456'
 
                 },{
                     nickname:'test001',
@@ -70,52 +38,68 @@ var Promise = require('bluebird');
                     role:'user',
                     password:'test'
 
+                }).then(function(){
+                    Tag.countAsync().then(function (count) {
+                        if (count === 0) {
+                            Tag.createAsync({
+                                    name: 'nodejs'
+                                }, {
+                                    name: 'angular'
+                                }, {
+                                    name: 'react'
+                                })
+                                .then(function(){
+                                    return Tag.findAsync()
+                                })
+                                .then(function (tags) {
+                                    return Article.removeAsync().then(function () {
+                                        return tags;
+                                    });
+                                }).map(function (tag, index) {
+                                console.log(index)
+                                var indexOne = parseInt(index) + 1;
+                                var indexTwo = parseInt(index) + 2;
+                                User.findOneAsync({nickname:'HJL'}).then(function(user){
+                                    Article.createAsync({
+                                        title: '第' + (index + indexOne) + '篇文章',
+                                        content: '<p>我第' + (index + indexOne) + '次爱你.</p>',
+                                        tags: [tag._id],
+                                        author_id:user._id
+                                    }).then(function(article){
+                                        Comment.createAsync({
+                                            aid:article._id,
+                                            user_id:user._id,
+                                            content:'good article!',
+                                            replys:[
+                                                {
+                                                    content:'good apply!',
+                                                    created:new Date(),
+                                                    user_info:{
+                                                        _id:user._id,
+                                                        nickname:user.nickname,
+                                                    }
+                                                },
+                                                {
+                                                    content:'good apply!',
+                                                    created:new Date(),
+                                                    user_info:{
+                                                        _id:user._id,
+                                                        nickname:user.nickname,
+                                                    }
+                                                }
+                                            ]
+                                        })
+                                    })
+                                })
+                            });
+
+                        }
+                    })
                 });
             });
         }
     });
 
-    Tag.countAsync().then(function (count) {
-        if (count === 0) {
-            Tag.createAsync({
-                    name: 'nodejs',
-
-
-                }, {
-                    name: 'angular',
-
-
-                }, {
-                    name: 'react',
-
-
-                })
-                .then(function(){
-                    return Tag.findAsync()
-                })
-                .then(function (tags) {
-                    return Article.removeAsync().then(function () {
-                        return tags;
-                    });
-                }).map(function (tag, index) {
-                console.log(index)
-                var indexOne = parseInt(index) + 1;
-                var indexTwo = parseInt(index) + 2;
-                Article.createAsync({
-                    title: '第' + (index + indexOne) + '篇文章',
-                    content: '<p>我第' + (index + indexOne) + '次爱你.</p>',
-                    tags: [tag._id],
-                    status: 1
-                }, {
-                    title: '第' + (index + indexTwo) + '篇文章',
-                    content: '<p>我第' + (index + indexTwo) + '次爱你.</p>',
-                    tags: [tag._id],
-                    status: 1
-                })
-            });
-
-        }
-    })
 
 
 // }

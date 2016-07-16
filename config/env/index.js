@@ -18,6 +18,7 @@ var all = {
     session:{
         secrets:'hjl-zq'
     },
+    userRoles: ['user', 'admin'],
     seedDB:true,
     snsLogins:['qq'],
     qq:{
