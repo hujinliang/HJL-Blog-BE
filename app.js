@@ -27,6 +27,11 @@ if(config.seedDB){
 var app = express()
 require('./config/express')(app);
 
+app.get('*',function(req,res,next){
+    console.log('get')
+    next()
+})
+
 app.get('/',function(req, res){
     res.render('index', { title: 'Express' });
 })

@@ -18,7 +18,8 @@ var mongoStore = require('connect-mongo')(session);
 module.exports = function(app){
     app.enable('trust proxy');
     var options = {
-
+        origin: true,
+        credentials: true
     };
     
     app.set('views',path.join(__dirname,'../views'));

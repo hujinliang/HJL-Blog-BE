@@ -9,6 +9,7 @@ var router = express.Router();
 var User = mongoose.model('User');
 
 router.post('/',function(req,res,next){
+    console.log(req)
     var error_msg;
     if(req.body.email === '' || req.body.password === ''){
         error_msg = '用户名和密码不能为空';
