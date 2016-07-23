@@ -60,13 +60,75 @@ var Promise = require('bluebird');
                                 var indexOne = parseInt(index) + 1;
                                 var indexTwo = parseInt(index) + 2;
                                 User.findOneAsync({nickname:'HJL'}).then(function(user){
-                                    Article.createAsync({
+                                    return Article.createAsync({
                                         title: '第' + (index + indexOne) + '篇文章',
                                         content: '<p>我第' + (index + indexOne) + '次爱你.</p>',
                                         tags: [tag._id],
                                         author_id:user._id
                                     }).then(function(article){
-                                        Comment.createAsync({
+                                        return Comment.createAsync({
+                                            aid:article._id,
+                                            user_id:user._id,
+                                            content:'good article!',
+                                            replys:[
+                                                {
+                                                    content:'good apply!',
+                                                    created:new Date(),
+                                                    user_info:{
+                                                        _id:user._id,
+                                                        nickname:user.nickname,
+                                                    }
+                                                },
+                                                {
+                                                    content:'good apply!',
+                                                    created:new Date(),
+                                                    user_info:{
+                                                        _id:user._id,
+                                                        nickname:user.nickname,
+                                                    }
+                                                }
+                                            ]
+                                        })
+                                    }).then(function(){
+                                        return Article.createAsync({
+                                        title: '第' + (index + indexTwo) + '篇文章',
+                                        content: '<p>我第' + (index + indexTwo) + '次爱你.</p>',
+                                        tags: [tag._id],
+                                        author_id:user._id
+                                    })
+                                    }).then(function(article){
+                                        return Comment.createAsync({
+                                            aid:article._id,
+                                            user_id:user._id,
+                                            content:'good article!',
+                                            replys:[
+                                                {
+                                                    content:'good apply!',
+                                                    created:new Date(),
+                                                    user_info:{
+                                                        _id:user._id,
+                                                        nickname:user.nickname,
+                                                    }
+                                                },
+                                                {
+                                                    content:'good apply!',
+                                                    created:new Date(),
+                                                    user_info:{
+                                                        _id:user._id,
+                                                        nickname:user.nickname,
+                                                    }
+                                                }
+                                            ]
+                                        })
+                                    }).then(function(){
+                                        return Article.createAsync({
+                                        title: '第' + (index + indexTwo) + '篇文章',
+                                        content: '<p>我第' + (index + indexTwo) + '次爱你.</p>',
+                                        tags: [tag._id],
+                                        author_id:user._id
+                                    })
+                                    }).then(function(article){
+                                        return Comment.createAsync({
                                             aid:article._id,
                                             user_id:user._id,
                                             content:'good article!',
@@ -95,7 +157,7 @@ var Promise = require('bluebird');
 
                         }
                     })
-                });
+                });;
             });
         }
     });
