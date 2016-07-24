@@ -18,7 +18,7 @@ var ArticleSchema = new Schema({
 		type:Schema.Types.ObjectId,
 		ref:'Tag'
 	}],
-	visite_count:{
+	visit_count:{
 		type:Number,
 		default:1
 	},
@@ -49,7 +49,7 @@ ArticleSchema
 			'content':this.content,
 			'images':this.images,
 			'comment_count':this.comment_count,
-			'visit_count':this.visite_count,
+			'visit_count':this.visit_count,
 			'like_count':this.like_count,
 			'created':this.created
 		}

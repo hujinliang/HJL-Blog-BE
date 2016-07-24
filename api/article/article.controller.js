@@ -64,6 +64,7 @@ exports.getFrontArticle = function(req,res,next){
     });
 
     return Article.findByIdAsync(id).then(function(result){
+
         result.content = md.render(result.content);
         result.visit_count++;
         Article.findByIdAndUpdateAsync(id,{$inc:{visit_count:1}});
@@ -72,7 +73,7 @@ exports.getFrontArticle = function(req,res,next){
 };
 
 exports.toggleLike = function(req,res,next){
-    var aid = new mongoose.Types.ObjectId(req,params.id);
+    var aid = new mongoose.Types.ObjectId(req.params.id);
     var userId = req.user._id;
 
     var isLike = _.findIndex(req.user.likeList,function(item){
@@ -94,7 +95,7 @@ exports.toggleLike = function(req,res,next){
             return res.status(200).json({
                 success:true,
                 count:article.like_count,
-                isLiked:liked
+                isLike:liked
             })
         }).catch(function(err){
             return next(err);
