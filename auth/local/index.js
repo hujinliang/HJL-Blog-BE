@@ -9,7 +9,6 @@ var router = express.Router();
 var User = mongoose.model('User');
 
 router.post('/',function(req,res,next){
-    console.log(req)
     var error_msg;
     if(req.body.email === '' || req.body.password === ''){
         error_msg = '用户名和密码不能为空';
@@ -19,6 +18,9 @@ router.post('/',function(req,res,next){
     }
 },function(req,res,next){
     passport.authenticate('local',function(err,user,info){
+        // console.log(err);
+        // console.log(user);
+        // console.log(info)
         if(err){
             next(err);
         }

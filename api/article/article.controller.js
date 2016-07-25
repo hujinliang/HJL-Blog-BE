@@ -104,22 +104,44 @@ exports.toggleLike = function(req,res,next){
 };
 
 exports.getPrenext = function(req,res,next){
+    console.log(req.query)
     var id = req.params.id;
     var sort = String(req.query.sortName) || 'created';
-    var preCondition={},nextCondition={};
+    var preCondition={};
+    var nextCondition={};
     if(req.query.tagId){
         var tagId = String(req.query.tagId);
-        preCondition = _.defaults(preCondition,{tags:{$eleMatch:{$eq:tagId}}});
-        nextCondition = _.defaults(nextCondition,{tags:{$eleMatch:{$eq:tagId}}});
+        preCondition = _.defaults(preCondition,{tags:{$elemMatch:{$eq:tagId}}});
+        nextCondition = _.defaults(nextCondition,{tags:{$elemMatch:{$eq:tagId}}});
     }
     Article.findByIdAsync(id).then(function(article){
+        console.log(article)
         if(sort == 'visit_count'){
-            preCondition = _.defaults(preCondition,{'_id':{$ne:id},'visit_count':{'$lte':article.visit_count}});
-            nextCondition = _.defaults(preCondition,{'_id':{$ne:id},'visit_count':{'$gte':article.visit_count}});
+            preCondition = _.defaults(preCondition,{'_id':{$ne:id},'visit_count':{'$lte':article.visit_count+1}});
+            nextCondition = _.defaults(nextCondition,{'_id':{$ne:id},'visit_count':{'$gte':article.visit_count+1}});
+            console.log(preCondition)
+            console.log(nextCondition)
         }else{
-            preCondition = _.defaults(preCondition,{'_id':{$ne:id},'created':{'$lte':article.visit_count}});
-            nextCondition = _.defaults(preCondition,{'_id':{$ne:id},'created':{'$gte':article.visit_count}});
+            preCondition = _.defaults(preCondition,{'_id':{$ne:id},'created':{'$lte':article.created}});
+            nextCondition = _.defaults(nextCondition,{'_id':{$ne:id},'created':{'$gte':article.created}});
+            console.log(preCondition)
+            console.log(nextCondition)
         };
+
+        Article.find(preCondition)
+            .select('title')
+            .sort('-' + sort)
+            .exec().then(function(results){
+            console.log(results)
+        }).catch(function(err){
+            console.log(err)
+        })
+        Article.find(nextCondition)
+            .select('title')
+            .sort('-'+ sort)
+            .exec().then(function(results){
+            console.log(results)
+        })
 
         var prePromise = Article.find(preCondition)
             .select('title')
@@ -136,11 +158,12 @@ exports.getPrenext = function(req,res,next){
             return nextPromise.then(function(nextResult){
                 var next = nextResult[0] || {};
                 return {
-                    'next':next,
-                    'prev':prev
+                    'next':prev,
+                    'prev':next
                 }
             })
         }).then(function(result){
+            console.log(result)
             return res.status(200).json({
                 data:result
             })

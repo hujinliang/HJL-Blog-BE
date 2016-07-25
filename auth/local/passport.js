@@ -9,8 +9,10 @@ exports.setup = function(User,config){
         usernameField:'email',
         passwordField:'password'
     },function(email,password,done){
+        console.log(email);
+        console.log(password);
         User.findOne({email:email.toLowerCase()},function(err,user){
-            
+            console.log(user)
             if(err){
                 return done(err);
             }
