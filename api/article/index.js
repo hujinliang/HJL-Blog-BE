@@ -11,8 +11,8 @@ var router = express.Router();
 
 router.post('/addArticle',auth.hasRole('admin'),controller.addArticle);
 router.get('/getArticleList',auth.hasRole('admin'),controller.getArticleList);
-router.put('/:id/updateArticle',auth.hasRole('admin'),controller.updateArticle);
-router.delete('/:id',auth.hasRole('admin'),controller.delete);
+// router.put('/:id/updateArticle',auth.hasRole('admin'),controller.updateArticle);
+router.delete('/:id',auth.hasRole('admin'),controller.destroy);
 
 
 router.get('/getFrontArticleList',controller.getFrontArticleList);

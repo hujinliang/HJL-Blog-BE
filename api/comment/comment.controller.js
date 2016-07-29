@@ -69,3 +69,30 @@ exports.addNewReply = function(req,res,next){
 		});
 	})
 }
+
+exports.getCommentList = function(req,res,next){
+    Comment.find({})
+        .sort('created')
+        .populate({
+            path:'user_id',
+            select:'nickname avatar'
+        })
+        .populate({
+            path:'aid',
+            select:'title'
+        })
+        .exec()
+        .then(function(commentList){
+            return res.status(200).json({data:commentList})
+        })
+}
+
+exports.delComment = function(req,res,next){
+    var cid = req.params.id;
+    Comment.findByIdAndRemoveAsync(cid)
+        .then(function(result){
+            Article.findByIdAndUpdateAsync(result.aid,{$inc:{comment_count:-1}});
+            return res.status(200).json({success:true})
+        })
+}
+

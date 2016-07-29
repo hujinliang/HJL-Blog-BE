@@ -173,3 +173,48 @@ exports.getPrenext = function(req,res,next){
         return next(err);
     })
 }
+
+
+//admin
+exports.getArticleList = function(req,res,next) {
+    Article.find()
+        .sort('created')
+        .exec()
+        .then(function(articleList){
+            return res.status(200).json({data:articleList})
+        })
+}
+
+exports.destroy = function(Req,res,next){
+    var id = req.params.id;
+    Article.findByIdAndRemoveAsync(id)
+        .then(function(){
+            return Comment.removeAsync({aid:id})
+                .then(function(){
+                    return res.status(200).send({success:true})
+                })
+        }).catch(function(err){
+            return next(err);
+        })
+}
+
+exports.addArticle = function(req,res,next){
+    var content = req.body.content;
+    var title = req.body.title;
+    var error_msg;
+    if(!title){
+        error_msg = '标题不能为空'
+    }else if(!content){
+        error_msg = '内容不能为空'
+    }
+    if(error_msg){
+        return res.status(422).send({error_msg:error_msg})
+    }
+    
+    req.body.author_id = req.user._id;
+    
+    return Article.createAsync(req.body)
+        .then(result){
+        return res.status(200).json({article_id:result._id})
+    }
+}
