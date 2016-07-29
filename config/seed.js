@@ -59,6 +59,8 @@ var Promise = require('bluebird');
                                 console.log(index)
                                 var indexOne = parseInt(index) + 1;
                                 var indexTwo = parseInt(index) + 2;
+                                var indexThree = parseInt(index) + 3;
+                                var indexFour = parseInt(index) + 4;
                                 User.findOneAsync({nickname:'HJL'}).then(function(user){
                                     return Article.createAsync({
                                         title: '第' + (index + indexOne) + '篇文章',

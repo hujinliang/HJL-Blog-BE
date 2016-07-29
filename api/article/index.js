@@ -9,6 +9,12 @@ var upload = multer({dest:'upload/'});
 
 var router = express.Router();
 
+router.post('/addArticle',auth.hasRole('admin'),controller.addArticle);
+router.get('/getArticleList',auth.hasRole('admin'),controller.getArticleList);
+router.put('/:id/updateArticle',auth.hasRole('admin'),controller.updateArticle);
+router.delete('/:id',auth.hasRole('admin'),controller.delete);
+
+
 router.get('/getFrontArticleList',controller.getFrontArticleList);
 router.get('/getFrontArticleCount',controller.getFrontArticleCount);
 router.get('/:id/getFrontArticle',controller.getFrontArticle);
