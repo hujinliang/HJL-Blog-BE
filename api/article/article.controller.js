@@ -178,6 +178,7 @@ exports.getPrenext = function(req,res,next){
 //admin
 exports.getArticleList = function(req,res,next) {
     Article.find()
+        .select('title visit_count comment_count like_count created')
         .sort('created')
         .exec()
         .then(function(articleList){
