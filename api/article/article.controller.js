@@ -215,7 +215,7 @@ exports.addArticle = function(req,res,next){
     req.body.author_id = req.user._id;
     
     return Article.createAsync(req.body)
-        .then(result){
+        .then(function(result){
         return res.status(200).json({article_id:result._id})
-    }
+    })
 }
