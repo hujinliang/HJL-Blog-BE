@@ -13,7 +13,7 @@ exports.getFrontTagList = function(req,res,next){
 exports.addTag = function(req,res,next){
     var tagName = req.body.name;
 
-    Tag.findOneAsync({name:tags})
+    Tag.findOneAsync({name:tagName})
         .then(function(tag){
             if(tag){
                 return res.status(403).send({error_msg:'标签已存在'})
