@@ -101,6 +101,9 @@ exports.addUser = function(req,res,next){
         .then(function(user){
             return res.status(200).json({data:user})
         })
+        .catch(function(err){
+            return res.status(403).json({msg:'添加失败'})
+        })
     
 }
 
