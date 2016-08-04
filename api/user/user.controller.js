@@ -96,7 +96,6 @@ exports.addUser = function(req,res,next){
     }
     
     var newUser = new User(req.body);
-    newUser.role = 'user';
     
     newUser.saveAsync()
         .then(function(user){
