@@ -186,7 +186,7 @@ exports.getArticleList = function(req,res,next) {
         })
 }
 
-exports.destroy = function(Req,res,next){
+exports.destroy = function(req,res,next){
     var id = req.params.id;
     Article.findByIdAndRemoveAsync(id)
         .then(function(){
@@ -216,6 +216,6 @@ exports.addArticle = function(req,res,next){
     
     return Article.createAsync(req.body)
         .then(function(result){
-        return res.status(200).json({article_id:result._id})
+        return res.status(200).json({data:result})
     })
 }
