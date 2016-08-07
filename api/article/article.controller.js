@@ -7,12 +7,14 @@ var Article = mongoose.model('Article');
 var User = mongoose.model('User');
 var Comment = mongoose.model('Comment');
 var path = require('path');
-// var URL = require('URL');
 var MarkdownIt = require('markdown-it');
 var config = require('../../config/env');
 var Promise = require('bluebird');
-// var tools = require('../../util/tools');
-
+var formidable = require('formidable');
+var multipart = require('connect-multiparty')
+var fs = require('fs');
+var path = require('path')
+var AVATAR_UPLOAD_FOLDER = path.join(__dirname,'../../public/upload/')
 
 exports.getFrontArticleCount = function(req,res,next){
     var condition = {};
@@ -218,4 +220,77 @@ exports.addArticle = function(req,res,next){
         .then(function(result){
         return res.status(200).json({data:result})
     })
+}
+
+exports.upload = function(req,res) {
+
+
+    console.log(req.files.files)
+
+    //get filename
+    var filename = req.files.files.originalFilename || path.basename(req.files.files.ws.path);
+
+    console.log(filename)
+
+    //copy file to a public directory
+    var targetPath =AVATAR_UPLOAD_FOLDER + filename;
+
+    console.log(targetPath)
+
+    //copy file
+    fs.createReadStream(req.files.files.path).pipe(fs.createWriteStream(targetPath));
+    //return file url
+    res.json({code: 200, msg: {url: 'http://' + req.headers.host + '/upload' + filename}});
+
+
+
+
+    // console.log(req.body)
+
+//     var form = new formidable.IncomingForm();   //创建上传表单
+//     form.encoding = 'utf-8';		//设置编辑
+//     form.uploadDir =   AVATAR_UPLOAD_FOLDER;	 //设置上传目录
+//     form.keepExtensions = true;	 //保留后缀
+//     form.maxFieldsSize = 20 * 1024 * 1024;   //文件大小
+//
+//     form.parse(req, function(err, fields, files) {
+//
+//         console.log(fields)
+//         console.log(files)
+//       
+//
+//         if (err) {
+//
+//             return res.status(403).send({error_msg:'只支持png和jpg格式图片'});
+//         }
+//
+//         var extName = '';  //后缀名
+//         switch (files.fulAvatar.type) {
+//             case 'image/pjpeg':
+//                 extName = 'jpg';
+//                 break;
+//             case 'image/jpeg':
+//                 extName = 'jpg';
+//                 break;
+//             case 'image/png':
+//                 extName = 'png';
+//                 break;
+//             case 'image/x-png':
+//                 extName = 'png';
+//                 break;
+//         }
+//
+//         if(extName.length == 0){
+//             return res.status(403).send({error_msg:'只支持png和jpg格式图片'});
+//         }
+//
+//         var filename = files.fulAvatar.name;
+//
+//         var newPath = form.uploadDir + filename;
+//
+//         console.log(newPath);
+//         fs.renameSync(files.fulAvatar.path, newPath);  //重命名
+//         return res.status(200).json({success:true});
+//     });
+//    
 }

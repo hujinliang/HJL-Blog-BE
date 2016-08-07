@@ -4,9 +4,7 @@
 var express = require('express');
 var auth = require('../../auth/auth.service');
 var controller = require('./article.controller');
-var multer = require('multer');
-var upload = multer({dest:'upload/'});
-
+var multipart = require('connect-multiparty')
 var router = express.Router();
 
 router.post('/addArticle',auth.hasRole('admin'),controller.addArticle);
@@ -21,6 +19,6 @@ router.get('/:id/getFrontArticle',controller.getFrontArticle);
 
 router.get('/:id/getPrenext',controller.getPrenext);
 router.put('/:id/toggleLike',auth.isAuthenticated(),controller.toggleLike);
-
+router.post('/upload',multipart(),controller.upload);
 
 module.exports = router;
