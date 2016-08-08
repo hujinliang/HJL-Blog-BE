@@ -46,7 +46,10 @@ exports.getFrontArticleList = function(req,res,next){
         condition = _.defaults(condition,{ tags: { $elemMatch: { $eq:tagId } } });
     }
     Article.find(condition)
-        .select('title images visit_count comment_count like_count created')
+        .populate({
+            path:'tags',
+            select:'name'
+        })
         .skip(startRow)
         .limit(itemsPerPage)
         .sort(sort)
