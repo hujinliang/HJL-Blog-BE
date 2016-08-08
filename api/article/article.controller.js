@@ -225,17 +225,17 @@ exports.addArticle = function(req,res,next){
 exports.upload = function(req,res) {
 
 
-    console.log(req.files.files)
+   
 
     //get filename
     var filename = req.files.files.originalFilename || path.basename(req.files.files.ws.path);
 
-    console.log(filename)
+    
 
     //copy file to a public directory
     var targetPath =AVATAR_UPLOAD_FOLDER + filename;
 
-    console.log(targetPath)
+    
 
     //copy file
     fs.createReadStream(req.files.files.path).pipe(fs.createWriteStream(targetPath));
