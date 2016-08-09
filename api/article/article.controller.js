@@ -45,21 +45,42 @@ exports.getFrontArticleList = function(req,res,next){
         var tagId = String(req.query.tagId);
         condition = _.defaults(condition,{ tags: { $elemMatch: { $eq:tagId } } });
     }
-    Article.find(condition)
-        .populate({
-            path:'tags',
-            select:'name'
-        })
-        .skip(startRow)
-        .limit(itemsPerPage)
-        .sort(sort)
-        .exec().then(function(result){
-        return res.status(200).json({
-            data:result
-        }).catch(function(err){
-            return next(err);
-        });
-    })
+
+
+    Article.countAsync(condition)
+        .then(function(count){
+        return  Article.find(condition)
+            .populate({
+                path:'tags',
+                select:'name'
+            })
+            .skip(startRow)
+            .limit(itemsPerPage)
+            .sort(sort)
+            .exec().then(function(result){
+                return res.status(200).json({
+                    data:result,count:count
+                })
+            })
+    }).catch(function(err){
+        return next(err);
+    });
+
+    // Article.find(condition)
+    //     .populate({
+    //         path:'tags',
+    //         select:'name'
+    //     })
+    //     .skip(startRow)
+    //     .limit(itemsPerPage)
+    //     .sort(sort)
+    //     .exec().then(function(result){
+    //     return res.status(200).json({
+    //         data:result
+    //     }).catch(function(err){
+    //         return next(err);
+    //     });
+    // })
 };
 
 exports.getFrontArticle = function(req,res,next){
@@ -218,7 +239,20 @@ exports.addArticle = function(req,res,next){
     }
     
     req.body.author_id = req.user._id;
+
+    //解析content,保存images
+    var images = [];
+    var imageRegExp = /([^\(]*\.(jpe?g|png|gif))(?=\))/g;
+
+    content.replace(imageRegExp,function(match){
+        images.push(match);
+        return match;
+    });
+
+    req.body.images = images;
     
+    console.log(req.body)
+
     return Article.createAsync(req.body)
         .then(function(result){
         return res.status(200).json({data:result})
