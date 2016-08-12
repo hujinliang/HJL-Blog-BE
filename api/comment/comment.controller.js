@@ -57,10 +57,14 @@ exports.addNewReply = function(req,res,next){
 		})
 	}
 	var reply = req.body;
+    // console.log(req.user)
 	reply.user_info = {
 		id:req.user._id,
 		nickname:req.user.nickname
 	}
+    if(req.user.avatar){
+        reply.user_info.avatar = req.user.avatar
+    }
 	reply.created = new Date();
 	Comment.findByIdAndUpdateAsync(cid,{"$push":{"replys":reply}},{new:true}).then(function(result){
 		return res.status(200).json({
