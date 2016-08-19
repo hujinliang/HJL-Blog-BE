@@ -10,7 +10,7 @@ var Comment = mongoose.model('Comment');
 var Promise = require('bluebird');
 
 //初始化标签,文章,用户
-// if(process.env.NODE_ENV === 'development'){
+ if(process.env.NODE_ENV === 'development'){
     User.countAsync().then(function (count) {
         if(count === 0){
             User.removeAsync().then(function () {
@@ -166,4 +166,4 @@ var Promise = require('bluebird');
 
 
 
-// }
+ }
