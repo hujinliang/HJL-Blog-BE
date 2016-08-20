@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "set NODE_ENV=production&& node app"
+    "start": "set NODE_ENV=production&& pm2 start app.js"
   },
   "repository": {
     "type": "git",

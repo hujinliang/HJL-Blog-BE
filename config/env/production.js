@@ -8,7 +8,7 @@ module.exports = {
         uri:'mongodb://localhost/hjl-blog'
     },
     session:{
-        cookie:  {maxAge: 60000*5}
+        cookie:  {domain:'.hjlclould.cn',maxAge: 60000*5}
     }
     
 }

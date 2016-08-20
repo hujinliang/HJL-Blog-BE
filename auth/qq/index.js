@@ -25,8 +25,8 @@ router.get('/callback',function(req,res,next){
             snsmsg.msg = '失败';
             snsmsg.msgtype = 'error'
         }else{
-            snsmsg.msg = 'success';
-            snsmsg.msgtype = '登录成功，欢迎光临';
+            snsmsg.msgtype = 'success';
+            snsmsg.msg = '登录成功，欢迎光临';
             var token = auth.signToken(user._id);
             res.cookie('token',JSON.stringify(token),{domain:cookieDomain})
         }
