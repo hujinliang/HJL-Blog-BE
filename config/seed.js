@@ -18,7 +18,7 @@ var Promise = require('bluebird');
                     nickname:'HJL',
                     email:'1617451312@qq.com',
                     role:'admin',
-                    password:'yq123456'
+                    password:'111111'
 
                 },{
                     nickname:'test001',
